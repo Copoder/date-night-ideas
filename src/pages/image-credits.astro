@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import InfoPage from '@/components/InfoPage.astro';
+import credits from '@/data/imageCredits.json';
+---
+<BaseLayout title="Image Credits | Date Night Ideas" description="Generation and license information for visual assets used by Date Night Ideas." canonicalPath="/image-credits">
+  <InfoPage eyebrow="Image credits" title="Every visual has a paper trail." intro="Production visuals are generated for this project or sourced under a documented free license. The records below power the images currently used on the site.">
+    <h2>Licensed photography</h2><p>Openverse helped locate these Creative Commons images. Rights remain with their creators, and each link goes to the original source page.</p>
+    <ul class="credit-list">{credits.map((credit) => <li><img src={credit.path} alt="" width="240" height="160" loading="lazy" /><div><strong>{credit.title || credit.id}</strong><span>{credit.creator || 'Creator not supplied'} · {credit.license}{credit.licenseVersion ? ` ${credit.licenseVersion}` : ''}</span><a href={credit.sourcePage} target="_blank" rel="noopener">View original and license details</a></div></li>)}</ul>
+    <h2>Image briefs</h2><p>Required placements, fallback generation prompts, dimensions, alt text, and acceptance criteria are tracked in the project image requirements manifest. A missing generation tool cannot turn into an undocumented placeholder.</p>
+  </InfoPage>
+</BaseLayout>
+
+<style>
+  .credit-list { padding: 0; list-style: none; display: grid; gap: 14px; }
+  .credit-list li { padding: 12px; border: 1px solid var(--ink); display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; background: var(--paper-bright); }
+  .credit-list img { width: 150px; aspect-ratio: 3/2; object-fit: cover; }
+  .credit-list div { display: grid; gap: 3px; }
+  .credit-list span { color: var(--muted); font-size: .72rem; }
+  .credit-list a { font-size: .72rem; }
+  @media (max-width: 520px) { .credit-list li { grid-template-columns: 1fr; } .credit-list img { width: 100%; } }
+</style>

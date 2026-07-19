@@ -1,0 +1,6205 @@
+{
+  "version": "1.0",
+  "policy": "Metadata-only research receipt. Source prose is not stored or reproduced.",
+  "records": [
+    {
+      "id": "knot-general",
+      "url": "https://www.theknot.com/content/date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:51.722Z",
+      "httpStatus": 200,
+      "pageTitle": "121 Best Date Night Ideas | Fun, Cute & Romantic Date IdeasThe KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 1056581,
+      "visibleWordCount": 9985,
+      "contentSha256": "26e49ffce1e744eb90322ae0ca576c12a1f2c68b819529cb6898ae9cdb62169f",
+      "researchUse": "Broad activity discovery and category cross-checking; source wording is not reproduced."
+    },
+    {
+      "id": "knot-at-home",
+      "url": "https://www.theknot.com/content/at-home-date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:52.590Z",
+      "httpStatus": 200,
+      "pageTitle": "25 Romantic and Fun At Home Date Night Ideas for CouplesThe KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 851890,
+      "visibleWordCount": 5019,
+      "contentSha256": "1fec6744f5060e6f36ce66e71be36dbdf25b4b642ee9b9a493bc35416bdbd176",
+      "researchUse": "At-home activity patterns and low-friction setup research."
+    },
+    {
+      "id": "knot-cheap",
+      "url": "https://www.theknot.com/content/cheap-date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:53.444Z",
+      "httpStatus": 200,
+      "pageTitle": "50 Free, Cheap and Affordable Date Ideas For Couples on a BudgetThe KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 911458,
+      "visibleWordCount": 8880,
+      "contentSha256": "b9b14ad13ca4c6656d9f98ccba2a3e5b73eafa7fee80596e6a39c88b51a206f9",
+      "researchUse": "Free and low-budget activity discovery and budget cross-checking."
+    },
+    {
+      "id": "knot-outdoor",
+      "url": "https://www.theknot.com/content/outdoor-date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:54.393Z",
+      "httpStatus": 200,
+      "pageTitle": "Outdoor Date Ideas: Fun & Unique Date Ideas for Outdoorsy CouplesThe KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 853161,
+      "visibleWordCount": 3567,
+      "contentSha256": "218e3ed88eb47fea889a47c713a25f9b74df78bae26e103d271b13ebd7c095f6",
+      "researchUse": "Outdoor activity discovery across accessible and adventurous plans."
+    },
+    {
+      "id": "knot-fall",
+      "url": "https://www.theknot.com/content/fall-date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:55.395Z",
+      "httpStatus": 200,
+      "pageTitle": "20 Cute Fall Date Ideas You'll Want To Plan ASAPThe KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 885229,
+      "visibleWordCount": 3111,
+      "contentSha256": "b6b6dcdde8b290f4228eb94015abf877fd5a667ec6c13e506cc91674a9be7564",
+      "researchUse": "Fall-specific activity and seasonality research."
+    },
+    {
+      "id": "knot-winter",
+      "url": "https://www.theknot.com/content/winter-date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:56.379Z",
+      "httpStatus": 200,
+      "pageTitle": "Cute, Fun, and Romantic Winter Date Ideas To Try This YearThe KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 965918,
+      "visibleWordCount": 4104,
+      "contentSha256": "65ffaf4631193e70b477854c9f7df6449a9e1bf75870ef40cce77f5e05dec35d",
+      "researchUse": "Cold-weather activity and fallback research."
+    },
+    {
+      "id": "knot-summer",
+      "url": "https://www.theknot.com/content/summer-date-ideas",
+      "publisher": "The Knot",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:57.345Z",
+      "httpStatus": 200,
+      "pageTitle": "25 Cute and Fun Summer Date Ideas to Plan With Your Partner The KnotThe KnotThe KnotThe KnotThe KnotThe BumpXO GroupThe Knot WorldwideThe KnotThe KnotThe Knot",
+      "responseBytes": 859820,
+      "visibleWordCount": 4265,
+      "contentSha256": "bad48ce4599c61c92df67923ef1d9bbcf9fb268920302ae4b454726770d37c56",
+      "researchUse": "Warm-weather and long-daylight activity research."
+    },
+    {
+      "id": "good-housekeeping-general",
+      "url": "https://www.goodhousekeeping.com/life/relationships/a31405192/cute-romantic-date-ideas/",
+      "publisher": "Good Housekeeping",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:48:59.380Z",
+      "httpStatus": 200,
+      "pageTitle": "130 Creative Date Night Ideas to Make Sparks Fly",
+      "responseBytes": 742294,
+      "visibleWordCount": 4073,
+      "contentSha256": "e79cf1251a27e0bada75fe1be77fb2f3e7a32661d0b989f72c242949149a83a7",
+      "researchUse": "Broad theme research with emphasis on at-home, food, romantic, and creative plans."
+    },
+    {
+      "id": "today-general",
+      "url": "https://www.today.com/life/relationships/fun-date-ideas-rcna36719",
+      "publisher": "TODAY",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:49:01.263Z",
+      "httpStatus": 200,
+      "pageTitle": "85 Fun Date Ideas for Couples on Date NightToday LogoSearchSearchNBC News LogoNBC News LogoToday Logo",
+      "responseBytes": 592001,
+      "visibleWordCount": 3420,
+      "contentSha256": "108bef4a56a4d6ccb64c15cd2c72b6581201ebea687f3aa8002129fec8b7684b",
+      "researchUse": "Broad activity validation across relationship stages and time windows."
+    },
+    {
+      "id": "mindbodygreen-general",
+      "url": "https://www.mindbodygreen.com/articles/fun-dates-ideas",
+      "publisher": "mindbodygreen",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:49:02.492Z",
+      "httpStatus": 200,
+      "pageTitle": "77 Fun Date Ideas To Spark Romance, Connection & Intimacy | mindbodygreenSearchAccountmindbodygreen on Instagrammindbodygreen on Facebookmindbodygreen on Twittermindbodygreen on Pinterestmindbodygreen on YouTubemindbodygreen on TikTokmindbodygreenmindbodygreen",
+      "responseBytes": 146804,
+      "visibleWordCount": 6957,
+      "contentSha256": "782f28ffc56b4a07ba560029223e064aee4620a7e0f65ae879190fb5e11e870a",
+      "researchUse": "Low-pressure, connection-oriented and daytime theme research."
+    },
+    {
+      "id": "paired-games",
+      "url": "https://www.paired.com/articles/date-night-games-for-couples",
+      "publisher": "Paired",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:49:03.828Z",
+      "httpStatus": 200,
+      "pageTitle": "60 Date Night Games for Couples to Try | PairedInstagramInstagram",
+      "responseBytes": 150216,
+      "visibleWordCount": 3398,
+      "contentSha256": "eb579e3d59b6fb8fbd9fcd1dc5f623d38908581d7cf8397fb780e7f7b84b4eaa",
+      "researchUse": "Game structure, cooperation, competition, and conversation-prompt research."
+    },
+    {
+      "id": "rei-hiking-basics",
+      "url": "https://www.rei.com/learn/expert-advice/hiking-for-beginners.html",
+      "publisher": "REI Co-op",
+      "accessedAt": "2026-07-19",
+      "fetchedAt": "2026-07-19T13:49:05.689Z",
+      "httpStatus": 200,
+      "pageTitle": "Hiking for Beginners: Getting Started | REI Expert AdviceREI Co-op, Go to REI.com Home PageCalifornia Consumer Privacy Act (CCPA) Opt-Out Icon",
+      "responseBytes": 291426,
+      "visibleWordCount": 6851,
+      "contentSha256": "23aa32236df728639c3ae9bdd6d3e3ac43db09eda43213c4b8576dd038ef0ed0",
+      "researchUse": "Practical outdoor preparation, route, weather, gear, and turnaround guidance."
+    }
+  ],
+  "ideaEvidence": [
+    {
+      "ideaId": "blind-taste-test-night",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "tasting",
+            "game"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "tasting",
+            "game",
+            "taste"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "living-room-floor-picnic",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "picnic",
+            "food",
+            "floor"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "picnic",
+            "food",
+            "living",
+            "floor"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "two-person-bookstore-at-home",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "conversation",
+            "person"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "books",
+            "conversation",
+            "person"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "power-outage-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "cozy"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "cozy",
+            "power"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "tiny-restaurant-night",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "restaurant"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "restaurant"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "album-from-start-to-finish",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "chill",
+            "album",
+            "start"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "music",
+            "album",
+            "start",
+            "finish"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "photo-story-swap",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "photos",
+            "conversation",
+            "photo"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "photos",
+            "conversation",
+            "photo",
+            "story"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "five-dollar-grocery-challenge",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "challenge"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "challenge",
+            "dollar",
+            "grocery"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "kitchen-dance-lesson",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "dance",
+            "kitchen"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "dance",
+            "kitchen",
+            "lesson"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "build-a-blanket-cinema",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "movie",
+            "cozy",
+            "build",
+            "blanket"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "movie",
+            "cozy",
+            "build",
+            "blanket"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "question-jar-after-dark",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "conversation",
+            "question"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "conversation",
+            "question"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "home-cafe-crawl",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "coffee",
+            "food",
+            "crawl"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-corner-mood-makeover",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "home",
+            "diy",
+            "corner"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "home",
+            "diy",
+            "makeover"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "childhood-snack-re-creation",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "snack"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "nostalgia",
+            "food",
+            "childhood",
+            "snack",
+            "creation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mini-film-festival",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "creative"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "film",
+            "creative"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "couples-trivia-draft",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "game"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "trivia",
+            "game"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-a-house-cocktail-and-mocktail",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "creative",
+            "house",
+            "cocktail",
+            "mocktail"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "creative",
+            "house",
+            "cocktail"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "backyard-or-balcony-bistro",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "bistro"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "backyard"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "puzzle-with-a-playlist",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "puzzle",
+            "playlist"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "puzzle",
+            "music",
+            "playlist"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "recipe-roulette",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "cooking",
+            "surprise",
+            "recipe"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "cooking",
+            "surprise",
+            "recipe"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "read-a-play-together",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "theater",
+            "reading"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "home-spa-trade-off",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "spa"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "spa",
+            "relaxing"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "design-your-dream-sunday",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "planning",
+            "conversation",
+            "design",
+            "dream"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "planning",
+            "conversation",
+            "design"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "indoor-campout",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "cozy",
+            "indoor"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "camping",
+            "cozy",
+            "indoor"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-each-other-a-mini-museum",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "creative",
+            "other"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "creative",
+            "other",
+            "museum"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "at-home-comedy-club",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "comedy"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "shared-playlist-with-rules",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "conversation",
+            "playlist"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "music",
+            "conversation",
+            "playlist"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pantry-tapas-night",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "budget"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "home-portrait-session",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "photos",
+            "creative",
+            "session"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "photos",
+            "creative",
+            "session"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "origami-and-takeout",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "craft"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "craft",
+            "origami"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "rewatch-the-pilot",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "show",
+            "movie"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "tv",
+            "nostalgia",
+            "show",
+            "movie",
+            "film"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dessert-before-dinner",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "dinner"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "dessert",
+            "food",
+            "dinner"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "board-game-remix",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "board game",
+            "board"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "board game",
+            "board"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "future-postcard-night",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "romantic",
+            "future"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "romantic",
+            "future"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-a-two-person-zine",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "craft",
+            "person"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "craft",
+            "person"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "copycat-restaurant-dish",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "cooking",
+            "challenge",
+            "restaurant"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "cooking",
+            "challenge",
+            "restaurant"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "no-phone-living-room-hour",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "conversation",
+            "phone"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "conversation",
+            "phone",
+            "living"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "learn-one-magic-trick",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "magic",
+            "learn",
+            "trick"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "magic",
+            "learn",
+            "trick"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "window-weather-sketch-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "creative",
+            "weather"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "nature",
+            "creative",
+            "drawing",
+            "window",
+            "weather"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "breakfast-for-dinner-lab",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "dinner"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "at home",
+            "food",
+            "breakfast",
+            "dinner"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sunset-bench-draft",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "sunset",
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "sunset",
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "library-surprise-picks",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "books",
+            "surprise"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "library",
+            "books",
+            "surprise"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "neighborhood-architecture-walk",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "walk",
+            "neighborhood"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "thrift-store-gift-limit",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "thrift",
+            "challenge",
+            "store"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "thrift",
+            "challenge",
+            "store"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "free-museum-hour",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "museum",
+            "art"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "museum",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "transit-line-adventure",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "explore",
+            "adventure"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "explore",
+            "adventure"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-camera-photo-walk",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "photos",
+            "walk",
+            "camera",
+            "photo"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "photo"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "public-art-hunt",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "art",
+            "explore",
+            "public"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "art",
+            "explore",
+            "public"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "grocery-aisle-passport-date",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "food",
+            "tasting",
+            "grocery"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "food",
+            "culture"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "park-games-decathlon",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "park",
+            "games"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "park",
+            "games"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "community-calendar-first-date-roulette",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "community",
+            "surprise",
+            "conversation",
+            "calendar",
+            "first",
+            "roulette"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "community",
+            "surprise",
+            "conversation",
+            "first"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "farmers-market-ten-dollar-tour",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "market",
+            "food",
+            "farmers",
+            "dollar"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "market",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "playful-park-movement-swap",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "outdoors",
+            "picnic",
+            "playful"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "outdoors",
+            "picnic",
+            "playful"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "coffee-and-people-watching",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "coffee",
+            "watching"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "coffee",
+            "people",
+            "watching"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dollar-store-craft-off",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "craft",
+            "challenge",
+            "dollar",
+            "store"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "craft",
+            "challenge",
+            "store"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "free-local-landmark-tour",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "history",
+            "walk",
+            "local"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "picnic-from-the-pantry",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "picnic",
+            "budget"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "picnic",
+            "budget"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "window-shopping-dream-house",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "shopping",
+            "window",
+            "dream",
+            "house"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "design",
+            "dream"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "open-mic-drop-in",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "music",
+            "community"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "music",
+            "community"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "geocache-starter-date",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "adventure",
+            "starter"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "adventure"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dog-watching-park-walk",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "walk",
+            "watching"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "watching"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "free-trial-class-date",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "class"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "class",
+            "learning"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "cleanup-and-picnic-date",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "volunteer",
+            "water",
+            "picnic",
+            "cleanup"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "volunteer",
+            "water",
+            "picnic"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "used-book-five-dollar-hunt",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "books",
+            "gift",
+            "dollar"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "books",
+            "gift"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "public-garden-sketch-date",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "garden",
+            "drawing",
+            "public",
+            "sketch"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "garden",
+            "public"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "backyard-star-map",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "home",
+            "backyard"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "local-history-audio-walk",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "history",
+            "walk",
+            "local"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "local"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "free-concert-lawn-night",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "music",
+            "outdoors",
+            "concert"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "music",
+            "outdoors",
+            "concert"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "twenty-question-city-walk",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "walk",
+            "conversation",
+            "question"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "conversation",
+            "question"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "forgotten-gift-card-date",
+      "sources": [
+        {
+          "sourceId": "knot-cheap",
+          "matchedTerms": [
+            "budget",
+            "challenge",
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "budget",
+            "challenge",
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "re-create-your-first-shared-meal",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "nostalgia",
+            "food",
+            "create",
+            "first"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "food",
+            "create",
+            "first"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sunrise-coffee-date",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "coffee"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "sunrise"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "letters-for-the-next-hard-week",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "letters"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "writing",
+            "connection",
+            "letters"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "slow-dinner-with-three-courses",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "dinner",
+            "conversation"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "dinner",
+            "conversation",
+            "courses"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "your-relationship-soundtrack-walk",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "music",
+            "walk",
+            "relationship"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "music",
+            "walk",
+            "relationship"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-night-staycation",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "staycation"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "staycation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "stargazing-with-a-shared-blanket",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "stars",
+            "outdoors",
+            "blanket"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "stars",
+            "outdoors",
+            "stargazing"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "couples-massage-trade",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "relaxing",
+            "massage"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "relaxing",
+            "massage"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "memory-lane-drive",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "drive",
+            "nostalgia",
+            "memory"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "drive",
+            "memory"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dress-up-takeout-night",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "dress"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "dress"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "shared-dream-map",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "planning"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "planning",
+            "dream"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "private-museum-hour",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "art",
+            "conversation",
+            "private",
+            "museum"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "art",
+            "conversation",
+            "museum"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dessert-tasting-for-two",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "dessert",
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "tasting"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "rainy-window-dinner",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "rain",
+            "dinner",
+            "window"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "rain",
+            "dinner",
+            "rainy"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "read-old-messages-night",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "nostalgia",
+            "conversation",
+            "messages"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "conversation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "flower-market-morning",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "flowers",
+            "market",
+            "flower",
+            "morning"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "flowers",
+            "market",
+            "flower"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-perfect-hour",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "perfect"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "short",
+            "connection",
+            "perfect"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "favorite-place-after-dark",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "nostalgia",
+            "favorite",
+            "place"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "favorite",
+            "place"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "cook-from-a-love-story",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "cooking",
+            "story"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "cooking",
+            "story"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "two-person-candlelit-concert",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "music",
+            "at home",
+            "person",
+            "candlelit",
+            "concert"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "music",
+            "at home",
+            "person",
+            "concert"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "anniversary-of-an-ordinary-day",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "tradition",
+            "memory",
+            "anniversary"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "memory"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "rowboat-or-paddleboat-hour",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "water",
+            "outdoors"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "water",
+            "outdoors"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "photo-print-and-frame-date",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "photos",
+            "home",
+            "photo",
+            "print"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "photos",
+            "home",
+            "photo"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "midweek-hotel-lobby-drink",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "conversation",
+            "drink"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "conversation",
+            "hotel",
+            "drink"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "plan-the-date-you-keep-postponing",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "romantic",
+            "planning"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "romantic",
+            "planning"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mini-golf-with-bonus-rules",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "bonus"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "competition",
+            "bonus"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "arcade-token-draft",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "games"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "arcade",
+            "games"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "trivia-night-team-of-two",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "trivia",
+            "team"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "trivia",
+            "team"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "photo-scavenger-hunt",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "scavenger hunt",
+            "scavenger"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "photos",
+            "scavenger hunt",
+            "photo",
+            "scavenger"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "co-op-video-game-night",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "together",
+            "couple"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "video game",
+            "teamwork",
+            "together",
+            "couple",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bowling-with-secret-missions",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "challenge",
+            "secret"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "challenge",
+            "secret"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "escape-room-strategy-date",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "together",
+            "couple",
+            "strategy"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "escape room",
+            "teamwork",
+            "together",
+            "couple",
+            "escape"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "two-person-field-day",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "games",
+            "person"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "games",
+            "person"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "blind-drawing-duel",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "drawing",
+            "communication",
+            "blind"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "communication"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mystery-ingredient-challenge",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "challenge",
+            "mystery"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "cooking",
+            "challenge",
+            "mystery",
+            "ingredient"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "karaoke-category-battle",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "karaoke",
+            "music"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "karaoke",
+            "music"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "tabletop-tournament",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "board game"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "board game"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "thrifted-outfit-challenge",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "challenge"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "thrift",
+            "outfit",
+            "challenge"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "guess-the-song-in-three-seconds",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "music",
+            "quiz",
+            "guess",
+            "three",
+            "seconds"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "music",
+            "seconds"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pool-hall-best-of-five",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "competition"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "darts-around-the-world",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "planning",
+            "around",
+            "world"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "planning",
+            "around",
+            "world"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "improv-prompt-night",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "comedy",
+            "prompt"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "comedy"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "lego-build-off",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "building",
+            "creative",
+            "build"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "creative",
+            "build"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "card-game-with-conversation-stakes",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "cards",
+            "conversation"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "conversation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "alphabet-date-sprint",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "challenge"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "alphabet",
+            "challenge"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "claw-machine-budget-battle",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "prize"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "arcade",
+            "budget"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bad-movie-bingo",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "movie",
+            "bingo"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "movie"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pickleball-beginner-match",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "match"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "sport",
+            "match"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "couples-quiz-show",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "quiz",
+            "relationship"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "relationship"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "paper-airplane-flight-lab",
+      "sources": [
+        {
+          "sourceId": "paired-games",
+          "matchedTerms": [
+            "paper"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "paper",
+            "competition"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "golden-hour-trail-walk",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "hiking"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "hiking",
+            "trail"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "kayak-a-quiet-loop",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "kayak",
+            "water"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "water"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "botanical-garden-bingo",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "garden",
+            "game"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bike-to-one-good-snack",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "bike",
+            "food",
+            "snack"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "bike",
+            "food",
+            "snack"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "beginner-bouldering-date",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "climbing",
+            "beginner"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "climbing",
+            "beginner"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "birding-before-brunch",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "paddleboard-balance-date",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "water"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "water"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "picnic-hike-with-one-view",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "hike"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "outdoor-sculpture-route",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "art",
+            "walk",
+            "outdoor"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "art",
+            "walk",
+            "outdoor",
+            "route"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "campfire-dessert-night",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "campfire"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "horseback-trail-lesson",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "adventure",
+            "horseback",
+            "lesson"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "horses",
+            "adventure",
+            "trail"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "tide-pool-observation-date",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "coast",
+            "nature"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "orchard-picking-challenge",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "food",
+            "picking"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "disc-golf-first-round",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "sport",
+            "first",
+            "round"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "sport",
+            "first",
+            "round"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "waterfall-destination-walk",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "destination"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "hike",
+            "destination"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "outdoor-yoga-swap",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "outdoor"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "outdoor"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "night-market-wandering-date",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "market",
+            "food"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "canoe-and-shore-lunch",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "nature-center-micro-safari",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "nature"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors",
+            "nature"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sunrise-fishing-lesson",
+      "sources": [
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "outdoors",
+            "fishing",
+            "lesson"
+          ]
+        },
+        {
+          "sourceId": "rei-hiking-basics",
+          "matchedTerms": [
+            "outdoors"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "coffee-plus-one-block",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "coffee",
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bookstore-three-pick-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "books",
+            "conversation",
+            "bookstore",
+            "three"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "conversation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "museum-one-room-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "museum",
+            "art"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "museum",
+            "art"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "ice-cream-and-a-short-walk",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "ice cream",
+            "walk",
+            "cream",
+            "short"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "walk",
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "farmers-market-first-lap",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "market",
+            "food",
+            "first"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "market",
+            "food",
+            "farmers",
+            "first"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "record-store-listening-picks",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "music",
+            "record",
+            "store"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "music",
+            "shopping",
+            "record",
+            "store"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mini-golf-first-match",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "playful",
+            "first",
+            "match"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "mini golf",
+            "first"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "botanical-garden-loop",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "garden",
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "garden",
+            "walk",
+            "botanical"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "casual-lunch-counter-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "lunch",
+            "casual"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "public-art-and-coffee",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "art",
+            "coffee",
+            "public"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "art",
+            "public"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "trivia-night-with-an-exit-plan",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "team"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "trivia",
+            "team"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dog-friendly-park-meet",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "park"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "park"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "gallery-opening-drop-in",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "gallery",
+            "art"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "gallery",
+            "art",
+            "opening"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "food-hall-two-stop-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "tasting"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "library-exhibit-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "library",
+            "culture",
+            "exhibit"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "exhibit"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "beginner-pottery-painting",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "pottery",
+            "painting"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "pottery",
+            "creative",
+            "painting"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "weekend-flea-market-browse",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "market",
+            "thrift",
+            "weekend",
+            "browse"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "market",
+            "thrift"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-hour-aquarium-route",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "aquarium",
+            "route"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "aquarium",
+            "animals",
+            "route"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bakery-taste-test",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "food",
+            "taste"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "daytime-street-fair-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "first date",
+            "festival",
+            "street"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "first date"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "trade-your-usual-roles",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "routine",
+            "usual"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "routine",
+            "perspective",
+            "usual"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "ten-year-time-capsule",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "memory"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "capsule"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "redo-a-bad-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "playful"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "nostalgia"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "teach-your-hidden-specialty",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "learning",
+            "skills",
+            "teach"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "learning",
+            "skills",
+            "specialty"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "relationship-yearbook-night",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "relationship"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "photos",
+            "relationship"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "new-restaurant-old-questions",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "dinner",
+            "conversation",
+            "restaurant",
+            "questions"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "dinner",
+            "conversation",
+            "restaurant",
+            "questions"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-evening-shared-keepsake",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "home",
+            "together",
+            "couple",
+            "evening",
+            "shared",
+            "keepsake"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "home",
+            "teamwork",
+            "creative",
+            "together",
+            "couple",
+            "evening",
+            "shared"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "secret-snack-and-song-swap",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "surprise",
+            "music",
+            "food"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "surprise",
+            "music",
+            "food",
+            "secret",
+            "snack"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "revisit-your-wedding-menu",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "marriage",
+            "food",
+            "wedding"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "marriage",
+            "food",
+            "wedding"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "no-logistics-dinner",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "dinner",
+            "connection"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "dinner",
+            "connection"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "neighborhood-then-and-now-tour",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "neighborhood",
+            "memory"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pick-a-new-shared-ritual",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "planning",
+            "shared",
+            "ritual"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "tradition",
+            "planning",
+            "shared"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "the-other-person-s-perfect-hour",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "surprise",
+            "other",
+            "person",
+            "perfect"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "attention",
+            "surprise",
+            "other",
+            "person",
+            "perfect"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "archive-the-inside-jokes",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "inside",
+            "jokes"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "take-the-long-way-to-dinner",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "dinner",
+            "explore"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "dinner",
+            "explore"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "couples-book-club-for-one-essay",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "reading",
+            "conversation"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "reading",
+            "conversation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "plan-a-micro-adventure",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "planning",
+            "adventure"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "planning"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "relearn-a-dance-from-your-past",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "dance"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "dance",
+            "nostalgia"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "home-inventory-of-good-memories",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "home",
+            "memories"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "home",
+            "memories"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "twenty-dollar-anniversary",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "budget"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "anniversary",
+            "budget"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "after-bedtime-dessert-board",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "home",
+            "board"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "dessert",
+            "home",
+            "board"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "twenty-minute-porch-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "naptime-cafe-at-home",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "babysitter-handoff-walk",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "babysitter"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-episode-premiere-night",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "show",
+            "movie",
+            "easy",
+            "home"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "show",
+            "movie",
+            "easy",
+            "simple",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "kitchen-counter-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "food",
+            "kitchen"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "food",
+            "short",
+            "kitchen"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "school-night-mocktail-test",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "mocktail"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "playful"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "early-breakfast-before-the-house-wakes",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "early",
+            "house"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "breakfast",
+            "early"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "backyard-blanket-reset",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "chill",
+            "blanket"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "blanket"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "lunch-break-date-call",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "break"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "lunch",
+            "break"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "swap-bedtime-save-the-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "home",
+            "together",
+            "couple"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "home",
+            "together",
+            "couple"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "driveway-takeout-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "car"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "car"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "after-bedtime-story-swap",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "home"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "connection",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "ten-minute-parent-appreciation-date",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": [
+            "conversation",
+            "home",
+            "appreciation"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "conversation",
+            "connection",
+            "home"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mini-date-before-pickup",
+      "sources": [
+        {
+          "sourceId": "knot-at-home",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "air-dry-clay-trinket-swap",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "clay",
+            "craft"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "craft"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "paint-the-same-view",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "art",
+            "paint"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "art",
+            "paint"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-a-custom-card-deck",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cards",
+            "custom"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "upcycle-one-ugly-object",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "diy"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "diy",
+            "object"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pottery-painting-with-a-theme",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "pottery",
+            "theme"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "pottery",
+            "theme"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "collage-a-shared-weekend",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "planning",
+            "weekend"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "planning",
+            "shared",
+            "weekend"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-a-stop-motion-short",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "film"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "film",
+            "short"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "printmaking-with-found-shapes",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "craft",
+            "found"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "craft",
+            "found"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "design-a-flag-for-two",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "design",
+            "drawing"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "design"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "photo-booth-from-household-props",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "photos",
+            "photo"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "photos",
+            "photo"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "beginner-flower-arranging",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "flowers",
+            "design",
+            "flower"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "flowers",
+            "design",
+            "flower"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "hand-bind-a-tiny-notebook",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "paper"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "paper",
+            "notebook"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-a-neighborhood-field-guide",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "neighborhood",
+            "field"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "neighborhood",
+            "guide"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "decorate-thrifted-frames",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "thrift",
+            "decor",
+            "decorate"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "thrift",
+            "decor",
+            "frames"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "make-a-shared-stamp",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "design"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "design",
+            "shared"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-song-music-video",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "video",
+            "music"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "video",
+            "music"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "create-a-signature-gift-wrap",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "paper",
+            "create"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "paper",
+            "gift",
+            "create",
+            "signature"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sew-a-simple-patch",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "craft"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "craft",
+            "simple",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "build-a-cardboard-city",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "build"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "build"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "write-and-illustrate-a-bad-children-s-book",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "drawing",
+            "write"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "write",
+            "children"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dumpling-folding-night",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cooking"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "cooking"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "three-cheese-tasting",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cheese",
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "three"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "homemade-pizza-draft",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "pizza",
+            "game"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "pizza",
+            "game"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "coffee-flight-at-home",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "coffee",
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "street-food-progressive-dinner",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "walk",
+            "street",
+            "dinner"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "street",
+            "dinner"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pasta-shape-taste-test",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "tasting",
+            "taste"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "taste"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "farmers-market-dinner",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "market",
+            "cooking",
+            "dinner"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "market",
+            "cooking",
+            "dinner"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mocktail-flavor-lab",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "flavor"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "drinks",
+            "flavor"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "breakfast-sandwich-bracket",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "breakfast"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "breakfast"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sushi-hand-roll-night",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cooking"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "sushi",
+            "cooking"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "chocolate-percentage-test",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "food-truck-two-stop-tour",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "tour"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "food truck",
+            "tour",
+            "truck"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "soup-and-bread-from-scratch",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "soup",
+            "baking",
+            "bread",
+            "scratch"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "baking"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "hot-sauce-ladder",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "cookbook-cover-challenge",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cookbook",
+            "challenge",
+            "cover"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "challenge",
+            "cover"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "tea-around-the-world",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "tea",
+            "around"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "tea",
+            "culture",
+            "around",
+            "world"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "build-your-own-taco-counter",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cooking",
+            "build"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "cooking",
+            "build"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bakery-crawl-for-two",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "walk",
+            "crawl"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "crawl"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "no-recipe-stir-fry",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "cooking",
+            "improv",
+            "recipe"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "cooking"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "ice-cream-sundae-draft",
+      "sources": [
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "ice cream",
+            "game",
+            "cream",
+            "sundae"
+          ]
+        },
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "ice cream",
+            "game",
+            "cream"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "apple-orchard-recipe-date",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "apples",
+            "apple",
+            "recipe"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "apples",
+            "orchard",
+            "apple",
+            "recipe"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "leaf-peeping-backroad-loop",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "leaves",
+            "drive"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "drive",
+            "peeping"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "pumpkin-patch-pick-off",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "pumpkin",
+            "patch"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "pumpkin",
+            "farm",
+            "patch"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "cider-doughnut-comparison",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "cider",
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "tasting"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "fall-picnic-with-soup-thermos",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "picnic",
+            "thermos"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "picnic",
+            "thermos"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "corn-maze-team-route",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "maze",
+            "together",
+            "couple"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "teamwork",
+            "together",
+            "couple",
+            "route"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "thrifted-sweater-walk",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "walk",
+            "sweater"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "thrift",
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "haunted-history-tour",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "history",
+            "spooky",
+            "haunted"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "history",
+            "spooky",
+            "haunted"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "fire-pit-question-night",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "fire",
+            "conversation",
+            "question"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "fire",
+            "conversation",
+            "question"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "fall-farmers-market-basket",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "basket"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "market",
+            "food"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "scary-story-reading-date",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "spooky",
+            "scary",
+            "story"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "reading",
+            "spooky",
+            "story"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "autumn-photo-color-hunt",
+      "sources": [
+        {
+          "sourceId": "knot-fall",
+          "matchedTerms": [
+            "photos",
+            "walk",
+            "autumn",
+            "photo"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "photos",
+            "walk",
+            "autumn",
+            "photo",
+            "color"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "hot-chocolate-flight",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "cocoa",
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "tasting"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "holiday-lights-walking-route",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "lights",
+            "walk",
+            "holiday"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "lights",
+            "walk",
+            "holiday",
+            "walking",
+            "route"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "ice-skating-beginner-hour",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "skating"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "skating"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "snow-day-soup-swap",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "snow"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "snow"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "winter-bookshop-refuge",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "coffee",
+            "winter"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "books",
+            "coffee",
+            "winter"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "snow-sculpture-mini-contest",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "snow",
+            "creative"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "snow",
+            "creative"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "indoor-greenhouse-escape",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "indoor"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "plants",
+            "indoor",
+            "escape"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "fondue-without-the-fuss",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "food"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "food",
+            "without"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "winter-sunrise-drive",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "drive",
+            "winter"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "drive",
+            "winter"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "cozy-mystery-puzzle-night",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "game"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "mystery",
+            "game"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "winter-market-one-bag-date",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "market",
+            "shopping",
+            "winter"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "market",
+            "shopping",
+            "winter"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "blanket-fort-reading-hour",
+      "sources": [
+        {
+          "sourceId": "knot-winter",
+          "matchedTerms": [
+            "seasonal winter",
+            "cozy",
+            "blanket"
+          ]
+        },
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "reading",
+            "cozy",
+            "blanket"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "berry-picking-breakfast",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "berries",
+            "farm",
+            "berry",
+            "picking"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "berries",
+            "farm",
+            "berry",
+            "picking"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "outdoor-movie-picnic",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "movie",
+            "picnic",
+            "outdoor"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "movie",
+            "outdoor"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "wildflower-trail-walk",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "flowers",
+            "hike",
+            "trail"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "sunset-paddle-and-snack",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "paddle",
+            "sunset",
+            "snack"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "snack"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "porch-lemonade-test",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "tasting"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "drive-in-movie-night",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "movie",
+            "car",
+            "drive"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "movie",
+            "car"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "garden-center-plant-pick",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "garden"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "garden",
+            "plant"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "beach-breakfast-date",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "beach"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "beach"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "outdoor-concert-blanket-spot",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "music",
+            "outdoor",
+            "blanket"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "music",
+            "outdoors",
+            "outdoor",
+            "concert",
+            "blanket"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "first-warm-evening-picnic",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "picnic",
+            "spring",
+            "evening"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "spring",
+            "outdoors",
+            "first"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "firefly-dusk-walk",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "watermelon-picnic-challenge",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "picnic",
+            "challenge"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "open-window-dinner",
+      "sources": [
+        {
+          "sourceId": "knot-summer",
+          "matchedTerms": [
+            "dinner"
+          ]
+        },
+        {
+          "sourceId": "knot-outdoor",
+          "matchedTerms": [
+            "dinner"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "brunch-and-one-errand-free-hour",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "matinee-and-early-dinner",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "movie",
+            "dinner",
+            "early"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "movie",
+            "dinner",
+            "early"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "morning-market-breakfast",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "market",
+            "breakfast",
+            "morning"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "market",
+            "breakfast"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "library-two-pick-reading-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "library",
+            "reading",
+            "conversation"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "reading",
+            "conversation"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "lunch-hour-picnic",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "lunch",
+            "picnic"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "picnic"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "aquarium-before-the-crowds",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "aquarium"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "aquarium",
+            "animals"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "cafe-sketchbook-morning",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "coffee",
+            "morning"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "historic-house-tour",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "history",
+            "house"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "bike-path-lunch-loop",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "bike",
+            "lunch"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "bike"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "coffee-roastery-tour",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "coffee",
+            "tour"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": []
+        }
+      ]
+    },
+    {
+      "ideaId": "zoo-one-zone-date",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": []
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "zoo",
+            "animals"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "afternoon-tea-without-formality",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "tea",
+            "conversation",
+            "without"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "tea",
+            "conversation",
+            "afternoon",
+            "without"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sunlit-photo-walk",
+      "sources": [
+        {
+          "sourceId": "today-general",
+          "matchedTerms": [
+            "walk",
+            "photo"
+          ]
+        },
+        {
+          "sourceId": "mindbodygreen-general",
+          "matchedTerms": [
+            "photos",
+            "walk",
+            "photo"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "alphabet-neighborhood-date",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "alphabet",
+            "explore",
+            "neighborhood"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "explore",
+            "neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "silent-first-twenty-minutes",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "conversation",
+            "first"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "conversation",
+            "first"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "random-map-pin-adventure",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "surprise"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "surprise",
+            "adventure"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "tiny-awards-ceremony",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "creative"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "creative"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "one-color-date",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "color",
+            "theme"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "color",
+            "theme"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "tourist-in-your-own-zip-code",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "local",
+            "tour"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "local",
+            "tour",
+            "tourist"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "two-person-pop-up-exhibit",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "museum",
+            "home",
+            "person",
+            "exhibit"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "museum",
+            "home",
+            "person"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "dice-decided-evening",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "surprise",
+            "evening"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "surprise",
+            "evening"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "volunteer-then-debrief-date",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "volunteer",
+            "teamwork",
+            "conversation",
+            "together",
+            "couple"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "volunteer",
+            "conversation",
+            "together",
+            "couple"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "audio-diary-walk",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "audio",
+            "walk"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "walk"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "mystery-destination-envelope",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "surprise",
+            "planning",
+            "mystery"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "surprise",
+            "planning"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "museum-of-your-future-home",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "design",
+            "imagination",
+            "museum",
+            "future"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "design",
+            "museum",
+            "future"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "five-senses-date",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "theme"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "theme"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "sunrise-to-breakfast-micro-trip",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "trip"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "trip",
+            "breakfast",
+            "micro"
+          ]
+        }
+      ]
+    },
+    {
+      "ideaId": "constraint-card-date-night",
+      "sources": [
+        {
+          "sourceId": "knot-general",
+          "matchedTerms": [
+            "unique",
+            "design",
+            "conversation",
+            "challenge"
+          ]
+        },
+        {
+          "sourceId": "good-housekeeping-general",
+          "matchedTerms": [
+            "unique",
+            "design",
+            "conversation",
+            "challenge"
+          ]
+        }
+      ]
+    }
+  ]
+}

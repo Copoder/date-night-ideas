@@ -1,0 +1,33 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import IdeaCard from '@/components/IdeaCard.astro';
+import Picker from '@/components/Picker.astro';
+import { categories } from '@/data/categories';
+import { ideasByCategory } from '@/data/ideas';
+import { spokeByCategory } from '@/data/spokes';
+
+export const getStaticPaths = () => categories.filter((category) => !spokeByCategory.has(category.id)).map((category) => ({ params: { category: category.id }, props: { category } }));
+const { category } = Astro.props;
+const categoryIdeas = ideasByCategory(category.id);
+const title = `${category.name}: ${categoryIdeas.length} Specific Ideas`;
+const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: category.name, description: category.description, url: new URL(`/categories/${category.id}/`, Astro.site), numberOfItems: categoryIdeas.length };
+---
+
+<BaseLayout title={title} description={`${category.description} Browse ${categoryIdeas.length} specific plans with budget, timing, setup, and fallback notes.`} canonicalPath={`/categories/${category.id}/`} image={category.image} schema={schema}>
+  <section class="category-hero" style={`--accent:${category.accent}`}><div class="shell category-hero__grid"><div><a href="/categories/">All categories</a><p class="eyebrow">{category.kicker}</p><h1 class="display">{category.name}</h1><p>{category.description}</p><a class="button" href="/#picker">Find my three date night ideas</a></div><img src={category.image} alt={`${category.name} inspiration.`} width="900" height="700" /></div></section>
+  <section class="section"><div class="shell"><div class="section-heading"><p class="eyebrow">{categoryIdeas.length} researched plans</p><h2>Browse the ideas.</h2><p>Every plan has a real time window, budget, setup, and fallback. Use the Picker when you are ready to stop browsing.</p></div><div class="idea-grid">{categoryIdeas.map((idea) => <IdeaCard idea={idea} />)}</div></div></section>
+  <section class="category-picker"><div class="shell"><Picker /></div></section>
+</BaseLayout>
+
+<style>
+  .category-hero { padding: 70px 0; border-bottom: 1px solid var(--ink); background: color-mix(in srgb, var(--accent) 68%, var(--paper)); }
+  .category-hero__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .category-hero__grid > div > a:first-child { color: var(--muted); font-size: .72rem; }
+  .category-hero h1 { margin: 18px 0; font-size: clamp(3.4rem, 7vw, 6.7rem); font-weight: 540; }
+  .category-hero p:not(.eyebrow) { max-width: 560px; }
+  .category-hero img { aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--ink); box-shadow: 9px 9px 0 var(--ink); }
+  .idea-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .category-picker { padding: 85px 0; background: var(--yellow); }
+  @media (max-width: 850px) { .category-hero__grid { grid-template-columns: 1fr; } .idea-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .idea-grid { grid-template-columns: 1fr; } }
+</style>

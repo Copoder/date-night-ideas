@@ -1,0 +1,35 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import IdeaCard from '@/components/IdeaCard.astro';
+import Picker from '@/components/Picker.astro';
+import { spokes } from '@/data/spokes';
+import { ideasByCategory } from '@/data/ideas';
+import { categoryById } from '@/data/categories';
+
+export const getStaticPaths = () => spokes.map((spoke) => ({ params: { spoke: spoke.slug }, props: { spoke } }));
+const { spoke } = Astro.props;
+const category = categoryById.get(spoke.category)!;
+const spokeIdeas = ideasByCategory(spoke.category);
+const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: spoke.h1, description: spoke.description, url: new URL(`/${spoke.slug}`, Astro.site), isPartOf: { '@type': 'WebSite', name: 'Date Night Ideas', url: new URL('/', Astro.site) } };
+---
+
+<BaseLayout title={spoke.title} description={spoke.description} canonicalPath={`/${spoke.slug}`} image={category.image} schema={schema}>
+  <section class="spoke-hero" style={`--accent:${category.accent}`}><div class="shell spoke-hero__grid"><div><p class="eyebrow">{spoke.kicker}</p><h1 class="display">{spoke.h1}</h1><p>{spoke.intro}</p><a class="button" href="#spoke-picker">Find my three</a></div><img src={category.image} alt={`${spoke.h1} inspiration.`} width="960" height="720" /></div></section>
+  <section class="spoke-picker" id="spoke-picker"><div class="shell"><Picker prefill={spoke.prefill} /></div></section>
+  <section class="section"><div class="shell"><div class="section-heading"><p class="eyebrow">Browse before you decide</p><h2>{spokeIdeas.length} plans in this guide.</h2><p>Every one links back to a full plan. For a faster answer, use the Picker above.</p></div><div class="idea-grid">{spokeIdeas.map((idea) => <IdeaCard idea={idea} />)}</div><div class="hub-link"><p>Still open to anything?</p><a href="/">See all date night ideas and start from the main Picker.</a></div></div></section>
+</BaseLayout>
+
+<style>
+  .spoke-hero { padding: 78px 0; background: color-mix(in srgb, var(--accent) 60%, var(--paper)); border-bottom: 1px solid var(--ink); }
+  .spoke-hero__grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 60px; align-items: center; }
+  .spoke-hero h1 { margin-bottom: 22px; font-size: clamp(3.5rem, 7vw, 6.8rem); font-weight: 540; }
+  .spoke-hero p:not(.eyebrow) { max-width: 650px; font-size: 1.05rem; }
+  .spoke-hero img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+  .spoke-picker { padding: 75px 0; background: var(--yellow); }
+  .idea-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .hub-link { margin-top: 45px; padding: 25px; border: 1px solid var(--ink); background: var(--mint); }
+  .hub-link p { margin-bottom: 4px; font-family: var(--display); font-size: 1.65rem; }
+  .hub-link a { font-weight: 800; }
+  @media (max-width: 820px) { .spoke-hero__grid { grid-template-columns: 1fr; } .idea-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .idea-grid { grid-template-columns: 1fr; } }
+</style>

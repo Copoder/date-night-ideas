@@ -1,0 +1,8 @@
+---
+interface Props { value: string; label: string; note: string; }
+const { value, label, note } = Astro.props;
+---
+
+<button class="choice" type="button" data-value={value} aria-pressed="false">
+  <strong>{label}</strong><small>{note}</small><i aria-hidden="true">✓</i>
+</button>

@@ -1,0 +1,1544 @@
+{
+  "version": "2.1",
+  "updatedAt": "2026-07-19",
+  "instructions": "Current files remain provenance-approved fallbacks, but visualStatus marks them for replacement. Every replacement requires prompt, placement, output path, and human visual review.",
+  "statuses": [
+    "brief_needed",
+    "ready_for_generation",
+    "ready_for_sourcing",
+    "generated",
+    "sourced",
+    "approved"
+  ],
+  "visualStatuses": [
+    "replacement_required",
+    "visually_reviewed",
+    "approved"
+  ],
+  "requirements": [
+    {
+      "id": "site-home-hero",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Make the product and a real date-night setting recognizable in the first viewport.",
+      "placements": [
+        {
+          "route": "/",
+          "slot": "home hero background",
+          "aspectRatio": "12:7",
+          "responsiveNotes": "Keep the couple visible on mobile; preserve dark contrast space for the headline."
+        }
+      ],
+      "visualBrief": "An authentic, attainable date with a couple sharing a specific place or activity, photographed candidly rather than posed.",
+      "generationPrompt": "Use case: photorealistic-natural. Website home hero: exactly two adults on an attainable date, actively sharing a lakeside picnic and conversation with the picnic clearly visible. Candid interaction, genuine body language, natural skin and fabric texture, documentary lifestyle photography, warm natural evening light without orange grading. Wide 12:7 framing; keep the couple in the center mobile-safe area and preserve clean darker contrast space for headline copy. No text, logos, watermark, stock-photo pose, solo person, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "A couple sharing a relaxed date beside a lake.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "home-hero",
+        "path": "/images/site/home-hero.webp",
+        "title": "Man Woman",
+        "creator": "Freestocks.org",
+        "creatorUrl": "https://stocksnap.io/author/20064",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://stocksnap.io/photo/man-woman-DEQLZPT7JI",
+        "originalFile": "https://cdn.stocksnap.io/img-thumbs/960w/DEQLZPT7JI.jpg",
+        "provider": "stocksnap",
+        "query": "couple picnic date"
+      },
+      "outputPath": "public/images/site/home-hero.webp",
+      "acceptanceCriteria": [
+        "Couple and setting remain recognizable on desktop and mobile crops.",
+        "Headline has sufficient contrast.",
+        "Scene feels candid and attainable."
+      ]
+    },
+    {
+      "id": "category-at-home",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for At-Home Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/at-home",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/at-home-date-night-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (at-home)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Dates that turn an ordinary room into somewhere you actually want to be together. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for At-Home Date Ideas: two adults building a cozy floor picnic and puzzle setup in a lived-in apartment. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "At-Home Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "at-home",
+        "path": "/images/categories/at-home.webp",
+        "title": "Jigsaw puzzle table",
+        "creator": "Unknown",
+        "creatorUrl": "",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.rawpixel.com/image/5906723/photo-image-background-public-domain-blue",
+        "originalFile": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4NzE1ODk2LWltYWdlLWt3dnY2cmx0LmpwZw.jpg",
+        "provider": "rawpixel",
+        "query": "jigsaw puzzle table"
+      },
+      "outputPath": "public/images/categories/at-home.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-cheap-free",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Cheap & Free Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/cheap-free",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/cheap-date-night-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (cheap-free)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Good nights that spend attention instead of money. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Cheap & Free Date Ideas: two adults on a relaxed sunset neighborhood walk with homemade drinks. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Cheap & Free Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "cheap-free",
+        "path": "/images/categories/cheap-free.webp",
+        "title": "Couple walking",
+        "creator": "bluesbby",
+        "creatorUrl": "https://www.flickr.com/photos/17367470@N05",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/17367470@N05/16267925833",
+        "originalFile": "https://live.staticflickr.com/7654/16267925833_4dc1aef1ec_b.jpg",
+        "provider": "flickr",
+        "query": "couple walking"
+      },
+      "outputPath": "public/images/categories/cheap-free.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-romantic",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Romantic Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/romantic",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/romantic-date-night-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (romantic)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Closer, warmer plans without the rose-petal cliches. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Romantic Date Ideas: two adults sharing dessert and attentive conversation at a small candlelit table without romantic cliches. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Romantic Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "romantic",
+        "path": "/images/categories/romantic.webp",
+        "title": "Waiting for dinner 2.jpg",
+        "creator": "docoverachiever",
+        "creatorUrl": "https://www.flickr.com/photos/90692748@N04",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/90692748@N04/11491953026",
+        "originalFile": "https://live.staticflickr.com/5547/11491953026_9ab2547edc_b.jpg",
+        "provider": "flickr",
+        "query": "candlelight dinner table"
+      },
+      "outputPath": "public/images/categories/romantic.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-playful-games",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Playful Date Ideas & Games and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/playful-games",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/date-night-games",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (playful-games)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Dates with a score, a dare, or at least one reason to laugh. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Playful Date Ideas & Games: two adults laughing over a recognizable board game in progress. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Playful Date Ideas & Games inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "playful-games",
+        "path": "/images/categories/playful-games.webp",
+        "title": "board game night table",
+        "creator": "Unknown",
+        "creatorUrl": "",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.rawpixel.com/image/5947366/free-public-domain-cc0-photo",
+        "originalFile": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg2ODY2MTYtaW1hZ2Uta3d5b3Z6M3IuanBn.jpg",
+        "provider": "rawpixel",
+        "query": "board game night table"
+      },
+      "outputPath": "public/images/categories/playful-games.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-outdoors",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Outdoor & Adventure Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/outdoors",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/outdoor-date-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (outdoors)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Fresh-air plans for couples who would rather move than make small talk. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Outdoor & Adventure Date Ideas: two adults walking a safe scenic trail together with the route clearly visible. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Outdoor & Adventure Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "outdoors",
+        "path": "/images/categories/outdoors.webp",
+        "title": "Weisendanger Falls - Height 55' - Elevation 950'",
+        "creator": "Ian Sane",
+        "creatorUrl": "https://www.flickr.com/photos/31246066@N04",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/31246066@N04/10251806855",
+        "originalFile": "https://live.staticflickr.com/5337/10251806855_1b79de1eb4_b.jpg",
+        "provider": "flickr",
+        "query": "couple hiking trail"
+      },
+      "outputPath": "public/images/categories/outdoors.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-first-date",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for First Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/first-date",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/first-date-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (first-date)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Public, low-pressure plans that give the conversation somewhere to go. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for First Date Ideas: two adults meeting at a welcoming public cafe table, natural conversation and easy body language. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "First Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "first-date",
+        "path": "/images/categories/first-date.webp",
+        "title": "Coffee cafe table",
+        "creator": "Unknown",
+        "creatorUrl": "",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.rawpixel.com/image/6038978/photo-image-public-domain-wooden-glass",
+        "originalFile": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJjb2ZmZWVfY3VwX2dsYXNzX2NhLWltYWdlLWt5YmR4OGNwLmpwZw.jpg",
+        "provider": "rawpixel",
+        "query": "coffee cafe table"
+      },
+      "outputPath": "public/images/categories/first-date.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-married-longterm",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Date Ideas for Married Couples and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/married-longterm",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/date-night-ideas-for-married-couples",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (married-longterm)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Plans for getting out of autopilot when you already know each other well. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Date Ideas for Married Couples: a long-term adult couple cooking or dancing together at home, playful and familiar rather than posed. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Date Ideas for Married Couples inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "married-longterm",
+        "path": "/images/categories/married-longterm.webp",
+        "title": "Senior Couple Walking in London",
+        "creator": "Unknown",
+        "creatorUrl": "",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.rawpixel.com/image/6082369/senior-couple-walking-london",
+        "originalFile": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2ZsMjIxNDUzMjg0MzYtaW1hZ2Uta3ljanM1MHAuanBn.jpg",
+        "provider": "rawpixel",
+        "query": "senior couple walking"
+      },
+      "outputPath": "public/images/categories/married-longterm.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-parents",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Date Ideas for Parents and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/parents",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/date-night-ideas-for-parents",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (parents)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Realistic reconnection for short windows, low energy, and kids nearby. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Date Ideas for Parents: two adult partners sharing a quiet dessert after bedtime in a lived-in home, no chores in progress. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Date Ideas for Parents inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "parents",
+        "path": "/images/categories/parents.webp",
+        "title": "Coffee for Wesley and I in my new birthday cups! :)",
+        "creator": "insidious_plots",
+        "creatorUrl": "https://www.flickr.com/photos/70928775@N00",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/70928775@N00/4725163703",
+        "originalFile": "https://live.staticflickr.com/1437/4725163703_dde47873d4_b.jpg",
+        "provider": "flickr",
+        "query": "couple breakfast home"
+      },
+      "outputPath": "public/images/categories/parents.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-creative-diy",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Creative & DIY Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/creative-diy",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/ideas/* (creative-diy)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Make something, ruin something, and keep the evidence. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Creative & DIY Date Ideas: two adults making pottery or painting side by side with both faces and hands visible. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Creative & DIY Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "creative-diy",
+        "path": "/images/categories/creative-diy.webp",
+        "title": "Artist Tony Merino Residency at College of DuPage 7",
+        "creator": "COD Newsroom",
+        "creatorUrl": "https://www.flickr.com/photos/41431665@N07",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/41431665@N07/13127825023",
+        "originalFile": "https://live.staticflickr.com/3831/13127825023_6541574c4c_b.jpg",
+        "provider": "flickr",
+        "query": "pottery workshop clay hands"
+      },
+      "outputPath": "public/images/categories/creative-diy.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-food-drink",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Food & Drink Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/food-drink",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/ideas/* (food-drink)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Cook, taste, compare, and turn dinner into the activity. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Food & Drink Date Ideas: two adults actively cooking and tasting one attainable dish together in a real kitchen. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Food & Drink Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "food-drink",
+        "path": "/images/categories/food-drink.webp",
+        "title": "Cooking dinner",
+        "creator": "mkorcuska",
+        "creatorUrl": "https://www.flickr.com/photos/53859752@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/53859752@N00/4285161011",
+        "originalFile": "https://live.staticflickr.com/4022/4285161011_87489300fb_b.jpg",
+        "provider": "flickr",
+        "query": "cooking dinner kitchen hands"
+      },
+      "outputPath": "public/images/categories/food-drink.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-seasonal-fall",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Fall Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/seasonal-fall",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/ideas/* (seasonal-fall)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Crisp-air plans with color, warmth, and something worth bringing home. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Fall Date Ideas: two adults sharing a simple thermos picnic among autumn color. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Fall Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "seasonal-fall",
+        "path": "/images/categories/seasonal-fall.webp",
+        "title": "Couple",
+        "creator": "mrhayata",
+        "creatorUrl": "https://www.flickr.com/photos/36516818@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/36516818@N00/319623937",
+        "originalFile": "https://live.staticflickr.com/129/319623937_d1906b1234_b.jpg",
+        "provider": "flickr",
+        "query": "autumn leaves couple"
+      },
+      "outputPath": "public/images/categories/seasonal-fall.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-seasonal-winter",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Winter Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/seasonal-winter",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/ideas/* (seasonal-winter)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Cold-weather dates that give you a reason to leave the blanket fort. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Winter Date Ideas: two adults ice skating together at an accessible public rink and enjoying the moment. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Winter Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "seasonal-winter",
+        "path": "/images/categories/seasonal-winter.webp",
+        "title": "Skating Couple",
+        "creator": "Jenn Durfey",
+        "creatorUrl": "https://www.flickr.com/photos/52498245@N03",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/52498245@N03/5406129307",
+        "originalFile": "https://live.staticflickr.com/5013/5406129307_21ea5b45c0_b.jpg",
+        "provider": "flickr",
+        "query": "couple ice skating winter"
+      },
+      "outputPath": "public/images/categories/seasonal-winter.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-seasonal-spring-summer",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Spring & Summer Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/seasonal-spring-summer",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/ideas/* (seasonal-spring-summer)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Long-light evenings, open windows, and plans made for better weather. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Spring & Summer Date Ideas: two adults sharing an early-evening picnic in fresh spring or summer light. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Spring & Summer Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "seasonal-spring-summer",
+        "path": "/images/categories/seasonal-spring-summer.webp",
+        "title": "Love",
+        "creator": "anna carol",
+        "creatorUrl": "https://www.flickr.com/photos/51035647549@N01",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/51035647549@N01/56034895",
+        "originalFile": "https://live.staticflickr.com/28/56034895_2431b24fde_b.jpg",
+        "provider": "flickr",
+        "query": "couple summer picnic"
+      },
+      "outputPath": "public/images/categories/seasonal-spring-summer.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-daytime",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Daytime Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/daytime",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/daytime-date-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (daytime)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "Coffee-to-sunset ideas for couples who do not need midnight to make it a date. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Daytime Date Ideas: two adults choosing breakfast items together at a daytime public market. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Daytime Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "daytime",
+        "path": "/images/categories/daytime.webp",
+        "title": "Free farmers market, vegetables display",
+        "creator": "Unknown",
+        "creatorUrl": "",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.rawpixel.com/image/5913183/photo-image-public-domain-wooden-free",
+        "originalFile": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTIwMjcwNy1pbWFnZS1rd3Z3OG9vYy5qcGc.jpg",
+        "provider": "rawpixel",
+        "query": "farmers market vegetables"
+      },
+      "outputPath": "public/images/categories/daytime.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "category-unique",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Primary visual language for Unique Date Ideas and its related Idea cards.",
+      "placements": [
+        {
+          "route": "/categories/unique",
+          "slot": "category hero and card thumbnail",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity legible in 3:2 and 4:3 crops."
+        },
+        {
+          "route": "/unique-date-ideas",
+          "slot": "Spoke hero",
+          "aspectRatio": "4:3",
+          "responsiveNotes": "Use the same approved category asset for visual continuity."
+        },
+        {
+          "route": "/ideas/* (unique)",
+          "slot": "Idea hero, recommendation card, related card",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Shared category asset until an Idea-specific approved image is available."
+        }
+      ],
+      "visualBrief": "The plans you will still be talking about when someone asks what you did this weekend. The image must show a real activity, place, object, or human interaction relevant to the category.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial website category image for Unique Date Ideas: two adults opening a mystery destination envelope together at the start of an unusual local date. Show exactly two adults who read as a couple through shared attention and natural proximity. The specific activity must be recognizable without the caption. Natural skin texture, ordinary attainable clothing, real materials, candid body language, soft natural or practical light. Landscape 3:2 with both people and the defining action readable at thumbnail size. No text, logos, watermark, stock-photo pose, solo person, object-only still life, empty landscape, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Unique Date Ideas inspiration.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "unique",
+        "path": "/images/categories/unique.webp",
+        "title": "kayaking couple",
+        "creator": "brenkeee",
+        "creatorUrl": "https://www.flickr.com/photos/117253275@N06",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/117253275@N06/14505969485",
+        "originalFile": "https://live.staticflickr.com/2907/14505969485_202be8c29b_b.jpg",
+        "provider": "flickr",
+        "query": "kayaking couple"
+      },
+      "outputPath": "public/images/categories/unique.webp",
+      "acceptanceCriteria": [
+        "The activity or setting is recognizable without the caption.",
+        "The crop works on cards and page heroes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-coffee",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the coffee activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "coffee Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Coffee, tea, or drinks shared by two people.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Coffee, tea, or drinks shared by two people. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "coffee date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-coffee",
+        "path": "/images/idea-groups/coffee.webp",
+        "title": "Coffee for Wesley and I in my new birthday cups! :)",
+        "creator": "insidious_plots",
+        "creatorUrl": "https://www.flickr.com/photos/70928775@N00",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/70928775@N00/4725163703",
+        "originalFile": "https://live.staticflickr.com/1437/4725163703_dde47873d4_b.jpg",
+        "provider": "flickr",
+        "query": "couple breakfast home"
+      },
+      "outputPath": "public/images/idea-groups/coffee.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-dessert",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the dessert activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "dessert Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A clearly recognizable dessert or tasting setup.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A clearly recognizable dessert or tasting setup. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "dessert date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-dessert",
+        "path": "/images/idea-groups/dessert.webp",
+        "title": "banana 'ice cream'",
+        "creator": "hlkljgk",
+        "creatorUrl": "https://www.flickr.com/photos/52473526@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/52473526@N00/3927477870",
+        "originalFile": "https://live.staticflickr.com/3255/3927477870_6bd0b94f59_b.jpg",
+        "provider": "flickr",
+        "query": "ice cream sundae dessert"
+      },
+      "outputPath": "public/images/idea-groups/dessert.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-cooking",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the cooking activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "cooking Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Hands actively preparing an attainable meal together.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Hands actively preparing an attainable meal together. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "cooking date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-cooking",
+        "path": "/images/idea-groups/cooking.webp",
+        "title": "Cooking dinner",
+        "creator": "mkorcuska",
+        "creatorUrl": "https://www.flickr.com/photos/53859752@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/53859752@N00/4285161011",
+        "originalFile": "https://live.staticflickr.com/4022/4285161011_87489300fb_b.jpg",
+        "provider": "flickr",
+        "query": "cooking dinner kitchen hands"
+      },
+      "outputPath": "public/images/idea-groups/cooking.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-books",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the books activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "books Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Books, reading, or a bookstore table with lived-in detail.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Books, reading, or a bookstore table with lived-in detail. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "books date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-books",
+        "path": "/images/idea-groups/books.webp",
+        "title": "Coffe and books",
+        "creator": "freestocks.org",
+        "creatorUrl": "https://www.flickr.com/photos/135396164@N05",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.flickr.com/photos/135396164@N05/29183443693",
+        "originalFile": "https://live.staticflickr.com/8543/29183443693_b793d66aa8_b.jpg",
+        "provider": "flickr",
+        "query": "open books coffee table"
+      },
+      "outputPath": "public/images/idea-groups/books.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-music",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the music activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "music Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Listening, records, live music, or instruments in use.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Listening, records, live music, or instruments in use. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "music date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-music",
+        "path": "/images/idea-groups/music.webp",
+        "title": "Vintage Hi Fi",
+        "creator": "mabecerra",
+        "creatorUrl": "https://www.flickr.com/photos/39348621@N00",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/39348621@N00/4015102979",
+        "originalFile": "https://live.staticflickr.com/2510/4015102979_704f2efc11_b.jpg",
+        "provider": "flickr",
+        "query": "vinyl records listening music"
+      },
+      "outputPath": "public/images/idea-groups/music.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-walking",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the walking activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "walking Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Two people walking through a safe, interesting place.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Two people walking through a safe, interesting place. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "walking date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-walking",
+        "path": "/images/idea-groups/walking.webp",
+        "title": "Couple walking",
+        "creator": "bluesbby",
+        "creatorUrl": "https://www.flickr.com/photos/17367470@N05",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/17367470@N05/16267925833",
+        "originalFile": "https://live.staticflickr.com/7654/16267925833_4dc1aef1ec_b.jpg",
+        "provider": "flickr",
+        "query": "couple walking",
+        "reusedFrom": "cheap-free"
+      },
+      "outputPath": "public/images/idea-groups/walking.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-picnic",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the picnic activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "picnic Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A simple picnic with visible food, blanket, and outdoor context.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A simple picnic with visible food, blanket, and outdoor context. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "picnic date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-picnic",
+        "path": "/images/idea-groups/picnic.webp",
+        "title": "Couple",
+        "creator": "mrhayata",
+        "creatorUrl": "https://www.flickr.com/photos/36516818@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/36516818@N00/319623937",
+        "originalFile": "https://live.staticflickr.com/129/319623937_d1906b1234_b.jpg",
+        "provider": "flickr",
+        "query": "autumn leaves couple",
+        "reusedFrom": "seasonal-fall"
+      },
+      "outputPath": "public/images/idea-groups/picnic.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-movie",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the movie activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "movie Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A cinema, projector, screen, or movie-night setup.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A cinema, projector, screen, or movie-night setup. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "movie date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-movie",
+        "path": "/images/idea-groups/movie.webp",
+        "title": "Birmingham IMAX Tour - Film Reels for the Projector",
+        "creator": "William Hook",
+        "creatorUrl": "https://www.flickr.com/photos/83542829@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/83542829@N00/4316098828",
+        "originalFile": "https://live.staticflickr.com/2756/4316098828_037eb8788a_b.jpg",
+        "provider": "flickr",
+        "query": "cinema projector movie"
+      },
+      "outputPath": "public/images/idea-groups/movie.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-games",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the games activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "games Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A recognizable tabletop, arcade, or two-person game in progress.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A recognizable tabletop, arcade, or two-person game in progress. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "games date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-games",
+        "path": "/images/idea-groups/games.webp",
+        "title": "Playing Game",
+        "creator": "Kristin Hardwick",
+        "creatorUrl": "https://www.kristinhardwick.com",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://stocksnap.io/photo/playing-game-TXIMMZTQ7O",
+        "originalFile": "https://cdn.stocksnap.io/img-thumbs/960w/TXIMMZTQ7O.jpg",
+        "provider": "stocksnap",
+        "query": "board game table pieces"
+      },
+      "outputPath": "public/images/idea-groups/games.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-craft",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the craft activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "craft Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Hands making, painting, drawing, or shaping something.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Hands making, painting, drawing, or shaping something. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "craft date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-craft",
+        "path": "/images/idea-groups/craft.webp",
+        "title": "Artist Tony Merino Residency at College of DuPage 7",
+        "creator": "COD Newsroom",
+        "creatorUrl": "https://www.flickr.com/photos/41431665@N07",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/41431665@N07/13127825023",
+        "originalFile": "https://live.staticflickr.com/3831/13127825023_6541574c4c_b.jpg",
+        "provider": "flickr",
+        "query": "pottery workshop clay hands"
+      },
+      "outputPath": "public/images/idea-groups/craft.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-water",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the water activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "water Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A real paddling, beach, boat, or waterside activity.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A real paddling, beach, boat, or waterside activity. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "water date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-water",
+        "path": "/images/idea-groups/water.webp",
+        "title": "Kayaking couple",
+        "creator": "hatasvadasz articsoka",
+        "creatorUrl": "",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://commons.wikimedia.org/w/index.php?curid=127252973",
+        "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Kayaking_couple.jpg",
+        "provider": "wikimedia",
+        "query": "kayaking couple"
+      },
+      "outputPath": "public/images/idea-groups/water.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-active",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the active activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "active Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "An approachable shared sport or movement activity.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: An approachable shared sport or movement activity. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "active date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-active",
+        "path": "/images/idea-groups/active.webp",
+        "title": "Skating Couple",
+        "creator": "Jenn Durfey",
+        "creatorUrl": "https://www.flickr.com/photos/52498245@N03",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/52498245@N03/5406129307",
+        "originalFile": "https://live.staticflickr.com/5013/5406129307_21ea5b45c0_b.jpg",
+        "provider": "flickr",
+        "query": "couple ice skating winter",
+        "reusedFrom": "seasonal-winter"
+      },
+      "outputPath": "public/images/idea-groups/active.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-garden",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the garden activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "garden Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "Flowers, plants, an orchard, or a garden path with seasonal detail.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: Flowers, plants, an orchard, or a garden path with seasonal detail. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "garden date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-garden",
+        "path": "/images/idea-groups/garden.webp",
+        "title": "Couple",
+        "creator": "mrhayata",
+        "creatorUrl": "https://www.flickr.com/photos/36516818@N00",
+        "license": "BY-SA",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/36516818@N00/319623937",
+        "originalFile": "https://live.staticflickr.com/129/319623937_d1906b1234_b.jpg",
+        "provider": "flickr",
+        "query": "autumn leaves couple",
+        "reusedFrom": "seasonal-fall"
+      },
+      "outputPath": "public/images/idea-groups/garden.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-market",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the market activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "market Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A public market with specific produce, food, or stalls.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A public market with specific produce, food, or stalls. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "market date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-market",
+        "path": "/images/idea-groups/market.webp",
+        "title": "Free farmers market, vegetables display",
+        "creator": "Unknown",
+        "creatorUrl": "",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://www.rawpixel.com/image/5913183/photo-image-public-domain-wooden-free",
+        "originalFile": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTIwMjcwNy1pbWFnZS1rd3Z3OG9vYy5qcGc.jpg",
+        "provider": "rawpixel",
+        "query": "farmers market vegetables",
+        "reusedFrom": "daytime"
+      },
+      "outputPath": "public/images/idea-groups/market.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-driving",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the driving activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "driving Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A safe road-trip moment or destination-oriented drive.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A safe road-trip moment or destination-oriented drive. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "driving date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-driving",
+        "path": "/images/idea-groups/driving.webp",
+        "title": "Weisendanger Falls - Height 55' - Elevation 950'",
+        "creator": "Ian Sane",
+        "creatorUrl": "https://www.flickr.com/photos/31246066@N04",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/31246066@N04/10251806855",
+        "originalFile": "https://live.staticflickr.com/5337/10251806855_1b79de1eb4_b.jpg",
+        "provider": "flickr",
+        "query": "couple hiking trail",
+        "reusedFrom": "outdoors"
+      },
+      "outputPath": "public/images/idea-groups/driving.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-photos",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the photos activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "photos Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A camera, portrait, or active photo-making moment.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A camera, portrait, or active photo-making moment. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "photos date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-photos",
+        "path": "/images/idea-groups/photos.webp",
+        "title": "Man Woman",
+        "creator": "Freestocks.org",
+        "creatorUrl": "https://stocksnap.io/author/20064",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://stocksnap.io/photo/man-woman-DEQLZPT7JI",
+        "originalFile": "https://cdn.stocksnap.io/img-thumbs/960w/DEQLZPT7JI.jpg",
+        "provider": "stocksnap",
+        "query": "couple picnic date",
+        "reusedFrom": "home-hero"
+      },
+      "outputPath": "public/images/idea-groups/photos.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-conversation",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the conversation activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "conversation Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "A warm, attentive two-person conversation without a staged pose.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: A warm, attentive two-person conversation without a staged pose. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "conversation date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-conversation",
+        "path": "/images/idea-groups/conversation.webp",
+        "title": "Waiting for dinner 2.jpg",
+        "creator": "docoverachiever",
+        "creatorUrl": "https://www.flickr.com/photos/90692748@N04",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/90692748@N04/11491953026",
+        "originalFile": "https://live.staticflickr.com/5547/11491953026_9ab2547edc_b.jpg",
+        "provider": "flickr",
+        "query": "candlelight dinner table",
+        "reusedFrom": "romantic"
+      },
+      "outputPath": "public/images/idea-groups/conversation.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "idea-group-home-cozy",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Reusable Idea-card visual for the home-cozy activity group.",
+      "placements": [
+        {
+          "route": "/ideas/* and Picker results",
+          "slot": "home-cozy Idea hero and cards",
+          "aspectRatio": "3:2",
+          "responsiveNotes": "Keep the activity readable at compact card sizes."
+        }
+      ],
+      "visualBrief": "An intentional, low-prep date setup at home.",
+      "generationPrompt": "Use case: photorealistic-natural. Editorial date-night activity photograph: An intentional, low-prep date setup at home. Show exactly two adults actively sharing the activity; both people and the defining action must be visible. Natural skin texture, attainable clothing and setting, candid interaction, soft natural or practical light. Landscape 3:2. No text, logos, watermark, solo person, object-only still life, empty landscape, unrelated activity, illustration, or 3D render.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "home cozy date-night activity.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "group-home-cozy",
+        "path": "/images/idea-groups/home-cozy.webp",
+        "title": "Coffee for Wesley and I in my new birthday cups! :)",
+        "creator": "insidious_plots",
+        "creatorUrl": "https://www.flickr.com/photos/70928775@N00",
+        "license": "BY",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourcePage": "https://www.flickr.com/photos/70928775@N00/4725163703",
+        "originalFile": "https://live.staticflickr.com/1437/4725163703_dde47873d4_b.jpg",
+        "provider": "flickr",
+        "query": "couple breakfast home",
+        "reusedFrom": "parents"
+      },
+      "outputPath": "public/images/idea-groups/home-cozy.webp",
+      "acceptanceCriteria": [
+        "The activity is recognizable without reading the title.",
+        "The crop works at card and hero sizes.",
+        "License and creator metadata are present."
+      ]
+    },
+    {
+      "id": "site-social-default",
+      "status": "approved",
+      "visualStatus": "replacement_required",
+      "purpose": "Default social sharing image for pages without a dedicated asset.",
+      "placements": [
+        {
+          "route": "site-wide fallback",
+          "slot": "Open Graph image",
+          "aspectRatio": "1.91:1",
+          "responsiveNotes": "Essential subjects stay inside the central safe area at 1200x630."
+        }
+      ],
+      "visualBrief": "A recognizable, attainable date-night scene with room for platform overlays.",
+      "generationPrompt": "Editorial lifestyle photograph of a real couple on an attainable date, candid body language, natural light, specific setting, wide social-preview composition, no embedded text, 1.91:1.",
+      "negativePrompt": "text, watermark, logo, solo person, object-only still life, empty landscape, unrelated activity, uncanny faces, extra fingers, duplicated objects, generic stock-photo pose, sexualized styling, illustration, 3D render, heavy blur, dark underexposure",
+      "altText": "Date Night Ideas social preview.",
+      "provenance": {
+        "type": "free_photo",
+        "id": "social-default",
+        "path": "/images/social/default.webp",
+        "title": "Man Woman",
+        "creator": "Freestocks.org",
+        "creatorUrl": "https://stocksnap.io/author/20064",
+        "license": "CC0",
+        "licenseVersion": "1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourcePage": "https://stocksnap.io/photo/man-woman-DEQLZPT7JI",
+        "originalFile": "https://cdn.stocksnap.io/img-thumbs/960w/DEQLZPT7JI.jpg",
+        "provider": "stocksnap",
+        "query": "couple picnic date"
+      },
+      "outputPath": "public/images/social/default.webp",
+      "acceptanceCriteria": [
+        "Recognizable at small social-preview sizes.",
+        "No third-party marks.",
+        "License and creator metadata are present."
+      ]
+    }
+  ]
+}

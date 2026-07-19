@@ -1,0 +1,12 @@
+---
+interface Props { placement: 'results-after' | 'idea-after-plan'; }
+const { placement } = Astro.props;
+const enabled = import.meta.env.PUBLIC_ADS_ENABLED === 'true';
+---
+
+{enabled && <aside class="ad-slot" data-ad-slot={placement} aria-label="Advertisement"><span>Advertisement</span><div data-ad-provider-target={placement}></div></aside>}
+
+<style>
+  .ad-slot { width: min(100%, 970px); min-height: 120px; margin: 36px auto; padding: 8px; border: 1px solid var(--line); background: var(--paper-bright); }
+  .ad-slot span { display: block; margin-bottom: 6px; color: var(--muted); font-size: .6rem; text-align: center; text-transform: uppercase; }
+</style>

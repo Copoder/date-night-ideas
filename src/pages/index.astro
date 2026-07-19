@@ -1,0 +1,132 @@
+---
+import { ArrowDown, ArrowRight, Check, HeartHandshake, RefreshCw, ShieldCheck, TimerReset } from 'lucide-astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Picker from '@/components/Picker.astro';
+import IdeaCard from '@/components/IdeaCard.astro';
+import { categories } from '@/data/categories';
+import { ideas, ideasByCategory } from '@/data/ideas';
+import { categoryPath, ideaPath } from '@/lib/routes';
+
+const featured = ideas.slice(0, 6);
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Date Night Ideas', url: 'https://date-night-ideas.com/', description: 'A fast decision tool that gives couples three date night ideas matched to budget, time, place, and vibe.' },
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Date Night Ideas: Pick the Right Date in 30 Seconds', url: 'https://date-night-ideas.com/', mainEntity: { '@type': 'SoftwareApplication', name: 'Date Night Ideas Picker', applicationCategory: 'LifestyleApplication', operatingSystem: 'Web' } },
+  { '@context': 'https://schema.org', '@type': 'ItemList', name: '300 Date Night Ideas', numberOfItems: ideas.length, itemListElement: ideas.map((idea, index) => ({ '@type': 'ListItem', position: index + 1, name: idea.title, url: new URL(ideaPath(idea.slug), Astro.site) })) }
+];
+---
+
+<BaseLayout title="Date Night Ideas: Pick the Right Date in 30 Seconds" description="Answer six quick questions and get three date night ideas matched to your budget, time, place, and mood. No account and no endless list." canonicalPath="/" schema={schema}>
+  <section class="hero">
+    <img class="hero__image" src="/images/site/home-hero.webp" alt="A couple enjoying an easy date-night activity together." width="1800" height="1050" fetchpriority="high" />
+    <div class="hero__shade"></div>
+    <div class="shell hero__content">
+      <p class="eyebrow">Date night, decided</p>
+      <h1 class="display">Date night ideas<br /><em>you’ll actually do.</em></h1>
+      <p>Six quick choices. Three plans that fit your real budget, energy, and time tonight.</p>
+      <a class="button button--red" href="#picker">Find our three <ArrowDown size={18} /></a>
+    </div>
+    <div class="hero__note"><span>300</span><small>researched ideas<br />and only three at a time</small></div>
+  </section>
+
+  <section class="picker-band">
+    <div class="shell"><Picker /></div>
+  </section>
+
+  <section class="proof-strip">
+    <div class="shell proof-strip__grid">
+      <div><TimerReset size={24} /><strong>Decide in under a minute</strong><span>The list stops at three.</span></div>
+      <div><ShieldCheck size={24} /><strong>Hard limits stay hard</strong><span>No “close enough” recommendations.</span></div>
+      <div><HeartHandshake size={24} /><strong>Source-mapped and edited</strong><span>Each plan records its research trail.</span></div>
+      <div><RefreshCw size={24} /><strong>Not feeling it?</strong><span>Refresh without answering again.</span></div>
+    </div>
+  </section>
+
+  <section class="section category-section">
+    <div class="shell">
+      <div class="section-heading"><p class="eyebrow">Start with the constraint</p><h2>Date night ideas for the night you actually have.</h2><p>At home, nearly free, first date, after bedtime. Every path leads back to the same fast decision tool.</p></div>
+      <div class="category-list">
+        {categories.map((category, index) => <a href={categoryPath(category.id)} style={`--accent:${category.accent}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{category.name}</strong><ArrowRight size={19} /></a>)}
+      </div>
+      <a class="text-link" href="/categories/">Browse all categories <ArrowRight size={17} /></a>
+    </div>
+  </section>
+
+  <section class="section editor-section">
+    <div class="shell editor-section__grid">
+      <div class="editor-section__statement"><p class="eyebrow">Less browsing, more dating</p><h2 class="display">A hundred ideas were never the answer.</h2></div>
+      <div class="editor-section__copy"><p>Most date-night lists hand you more work: scan, compare, second-guess, repeat. We research broadly, edit every plan for real constraints, and use your answers to cut the list down.</p><ul><li><Check size={17} />Every idea has a realistic budget and time window.</li><li><Check size={17} />Every result explains why it fits tonight.</li><li><Check size={17} />Sources are tracked; published copy is independently edited.</li></ul><a class="button" href="/about/">How we choose ideas <ArrowRight size={17} /></a></div>
+    </div>
+  </section>
+
+  <section class="section featured-section">
+    <div class="shell">
+      <div class="section-heading"><p class="eyebrow">Good calls right now</p><h2>A few date night ideas to steal.</h2><p>Browse if you want. When you are ready to stop browsing, the Picker will narrow it to three.</p></div>
+      <div class="idea-grid">{featured.map((idea) => <IdeaCard idea={idea} />)}</div>
+    </div>
+  </section>
+
+  <section class="section idea-directory">
+    <div class="shell">
+      <div class="directory-heading"><div><p class="eyebrow">The complete field guide</p><h2>All 300 date night ideas.</h2></div><p>Use the Picker when you want a decision. Open a category when you want to browse every researched starting point.</p></div>
+      <div class="directory-grid">
+        {categories.map((category, index) => <details open={index === 0} style={`--accent:${category.accent}`}><summary><span>{String(index + 1).padStart(2, '0')}</span><strong>{category.name}</strong><small>{ideasByCategory(category.id).length} ideas</small></summary><div>{ideasByCategory(category.id).map((idea) => <a href={ideaPath(idea.slug)}>{idea.title}</a>)}</div><a class="directory-category-link" href={categoryPath(category.id)}>Read the {category.shortName.toLowerCase()} guide <ArrowRight size={16} /></a></details>)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { min-height: min(760px, 82vh); position: relative; display: flex; align-items: center; overflow: hidden; background: var(--ink); color: white; }
+  .hero__image, .hero__shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero__image { object-fit: cover; }
+  .hero__shade { background: linear-gradient(90deg, rgba(20,20,18,.86) 0%, rgba(20,20,18,.53) 48%, rgba(20,20,18,.16) 78%), linear-gradient(0deg, rgba(20,20,18,.45), transparent 45%); }
+  .hero__content { position: relative; z-index: 1; padding: 90px 0 130px; }
+  .hero .eyebrow { color: var(--yellow); }
+  .hero h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(4rem, 9vw, 8rem); font-weight: 520; }
+  .hero h1 em { color: var(--yellow); font-weight: 520; }
+  .hero__content > p:not(.eyebrow) { max-width: 570px; margin-bottom: 28px; font-size: 1.12rem; }
+  .hero__note { position: absolute; z-index: 2; right: 4vw; bottom: 34px; display: flex; align-items: center; gap: 12px; }
+  .hero__note span { font-family: var(--display); font-size: 4.5rem; color: var(--yellow); line-height: .8; }
+  .hero__note small { color: white; font-size: .72rem; text-transform: uppercase; }
+  .picker-band { position: relative; z-index: 3; margin-top: -72px; padding-bottom: 40px; }
+  .proof-strip { border-block: 1px solid var(--ink); background: var(--yellow); }
+  .proof-strip__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .proof-strip__grid > div { min-height: 130px; padding: 24px; border-right: 1px solid var(--ink); display: grid; align-content: center; gap: 4px; }
+  .proof-strip__grid > div:first-child { border-left: 1px solid var(--ink); }
+  .proof-strip strong, .proof-strip span { display: block; }
+  .proof-strip strong { font-size: .83rem; }
+  .proof-strip span { color: #5f543d; font-size: .72rem; }
+  .category-section { background: var(--paper); }
+  .category-list { border-top: 1px solid var(--ink); }
+  .category-list a { min-height: 75px; padding: 12px 4px; border-bottom: 1px solid var(--ink); display: grid; grid-template-columns: 55px 1fr auto; align-items: center; gap: 16px; text-decoration: none; transition: padding .16s, background .16s; }
+  .category-list a:hover { padding-inline: 15px; background: var(--accent); }
+  .category-list span { color: var(--muted); font-size: .72rem; }
+  .category-list strong { font-family: var(--display); font-size: clamp(1.35rem, 3vw, 2.2rem); font-weight: 580; }
+  .text-link { margin-top: 25px; display: inline-flex; align-items: center; gap: 8px; font-weight: 800; text-decoration: none; }
+  .editor-section { background: var(--red); color: white; }
+  .editor-section .eyebrow { color: var(--yellow); }
+  .editor-section__grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: start; }
+  .editor-section h2 { font-size: clamp(3.2rem, 7vw, 6.5rem); font-weight: 520; }
+  .editor-section__copy > p { font-size: 1.1rem; }
+  .editor-section ul { padding: 0; margin: 30px 0; list-style: none; display: grid; gap: 13px; }
+  .editor-section li { display: flex; align-items: center; gap: 9px; }
+  .featured-section { background: var(--paper-bright); }
+  .idea-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .idea-directory { border-top: 1px solid var(--ink); background: var(--paper); }
+  .directory-heading { margin-bottom: 42px; display: grid; grid-template-columns: 1fr .55fr; gap: 55px; align-items: end; }
+  .directory-heading h2 { font-size: clamp(3rem, 6vw, 5.8rem); }
+  .directory-heading > p { color: var(--muted); }
+  .directory-grid { border-top: 1px solid var(--ink); }
+  .directory-grid details { border-bottom: 1px solid var(--ink); background: var(--paper-bright); }
+  .directory-grid summary { min-height: 76px; padding: 14px 18px; display: grid; grid-template-columns: 45px 1fr auto; align-items: center; gap: 14px; cursor: pointer; list-style: none; }
+  .directory-grid summary::-webkit-details-marker { display: none; }
+  .directory-grid summary span, .directory-grid summary small { color: var(--muted); font-size: .7rem; }
+  .directory-grid summary strong { font-family: var(--display); font-size: 1.55rem; }
+  .directory-grid details[open] summary { background: color-mix(in srgb, var(--accent) 45%, var(--paper-bright)); }
+  .directory-grid details > div { padding: 20px 18px 8px 77px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 22px; }
+  .directory-grid details > div a { padding: 6px 0; border-bottom: 1px solid #ddd4c6; font-size: .78rem; text-decoration: none; }
+  .directory-grid details > div a:hover { text-decoration: underline; }
+  .directory-category-link { margin: 12px 18px 22px 77px; display: inline-flex; align-items: center; gap: 5px; font-size: .75rem; font-weight: 850; }
+  @media (max-width: 850px) { .hero__note { display: none; } .proof-strip__grid { grid-template-columns: 1fr 1fr; } .proof-strip__grid > div { border-bottom: 1px solid var(--ink); } .editor-section__grid, .directory-heading { grid-template-columns: 1fr; gap: 25px; } .idea-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .hero { min-height: 720px; align-items: flex-start; } .hero__shade { background: linear-gradient(0deg, rgba(20,20,18,.78), rgba(20,20,18,.3)), linear-gradient(90deg, rgba(20,20,18,.66), transparent); } .hero__content { padding-top: 110px; } .hero h1 { font-size: clamp(3.7rem, 17vw, 5.4rem); } .picker-band { margin-top: -55px; } .proof-strip__grid { grid-template-columns: 1fr; } .proof-strip__grid > div { border-left: 1px solid var(--ink); } .idea-grid { grid-template-columns: 1fr; } .directory-grid details > div { padding-left: 18px; grid-template-columns: 1fr; } .directory-category-link { margin-left: 18px; } }
+</style>

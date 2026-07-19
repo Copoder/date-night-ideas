@@ -1,0 +1,13 @@
+---
+import { Clock3, HeartHandshake, MapPin, Sparkles, WalletCards } from 'lucide-astro';
+interface Props { number: string; title: string; copy: string; icon: 'heart' | 'map' | 'wallet' | 'spark' | 'clock'; }
+const { number, title, copy, icon } = Astro.props;
+const iconMap = { heart: HeartHandshake, map: MapPin, wallet: WalletCards, spark: Sparkles, clock: Clock3 };
+const Icon = iconMap[icon];
+---
+
+<div class="question-heading">
+  <span>{number}</span>
+  <Icon size={25} />
+  <div><h3>{title}</h3><p>{copy}</p></div>
+</div>

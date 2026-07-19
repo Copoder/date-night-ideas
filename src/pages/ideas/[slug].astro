@@ -1,0 +1,74 @@
+---
+import { ArrowLeft, Check, Clock3, MapPin, RefreshCw, WalletCards } from 'lucide-astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import IdeaCard from '@/components/IdeaCard.astro';
+import AdSlot from '@/components/AdSlot.astro';
+import { ideas } from '@/data/ideas';
+import { categoryById } from '@/data/categories';
+import { sourceById } from '@/data/sources';
+import { categoryPath, ideaPath } from '@/lib/routes';
+
+export const getStaticPaths = () => ideas.map((idea) => ({ params: { slug: idea.slug }, props: { idea } }));
+const { idea } = Astro.props;
+const category = categoryById.get(idea.primaryCategory)!;
+const related = ideas.filter((entry) => entry.primaryCategory === idea.primaryCategory && entry.id !== idea.id).slice(0, 3);
+const budgetLabel = { free: 'Free', low: 'Under $30', mid: '$30–$80', high: 'Splurge' }[idea.budget];
+const durationLabel = { short: 'Under 1 hour', medium: '1–3 hours', long: 'Half day or more' }[idea.duration];
+const sourceRefs = idea.sourceIds.map((id) => sourceById.get(id)).filter(Boolean);
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: idea.title, description: idea.summary, image: new URL(idea.image, Astro.site), dateModified: idea.editorialReview.reviewedAt, author: { '@type': 'Organization', name: 'Date Night Ideas Editorial Team' }, publisher: { '@type': 'Organization', name: 'Date Night Ideas' }, mainEntityOfPage: new URL(ideaPath(idea.slug), Astro.site) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Date Night Ideas', item: new URL('/', Astro.site) },
+    { '@type': 'ListItem', position: 2, name: category.name, item: new URL(categoryPath(category.id), Astro.site) },
+    { '@type': 'ListItem', position: 3, name: idea.title, item: new URL(ideaPath(idea.slug), Astro.site) }
+  ] }
+];
+---
+
+<BaseLayout title={`${idea.title} Date Idea`} description={idea.summary} canonicalPath={ideaPath(idea.slug)} image={idea.image} schema={schema}>
+  <article>
+    <header class="idea-hero" style={`--accent:${category.accent}`}><div class="shell"><a class="back-link" href={categoryPath(category.id)}><ArrowLeft size={16} /> {category.name}</a><div class="idea-hero__grid"><div><p class="eyebrow">{category.kicker}</p><h1 class="display">{idea.title}</h1><p class="idea-hero__hook">{idea.hook}</p><div class="idea-facts"><span><WalletCards size={18} />{budgetLabel}</span><span><Clock3 size={18} />{durationLabel}</span><span><MapPin size={18} />{idea.locations.includes('home') ? 'At home' : 'Out & about'}</span></div></div><img src={idea.image} alt={idea.imageAlt} width="1000" height="750" /></div></div></header>
+    <section class="section plan-section"><div class="shell plan-grid"><div class="plan-main"><p class="eyebrow">The plan</p><h2 class="display">Make the night easy to start.</h2><ol>{idea.steps.map((step, index) => <li><span>{index + 1}</span><p>{step}</p></li>)}</ol></div><aside><div><p class="eyebrow">Why it works</p><p>{idea.whyItWorks}</p></div><div><h2>Make it yours</h2><p>{idea.makeItYours}</p></div><div><h2>Need an easier version?</h2><p>{idea.fallback}</p></div></aside></div></section>
+    <section class="quality-band"><div class="shell quality-band__grid"><div><Check size={20} /><span>Two public research sources mapped</span></div><div><Check size={20} /><span>Independently rewritten for real constraints</span></div><div><Check size={20} /><span>Review record: {idea.editorialReview.reviewId}</span></div></div></section>
+    <AdSlot placement="idea-after-plan" />
+    <section class="section source-section"><div class="shell source-grid"><div><p class="eyebrow">Editorial transparency</p><h2 class="display">Where the idea started.</h2><p>{idea.researchNote}</p><div class="edit-note"><strong>What our edit added</strong><span>{idea.editorialNote}</span></div></div><ul>{sourceRefs.map((source) => <li><a href={source?.url} rel="noopener" target="_blank">{source?.title}</a><span>{source?.publisher} · accessed {source?.accessedAt}</span><small>{source?.notes}</small></li>)}</ul></div></section>
+    <section class="section related-section"><div class="shell"><div class="section-heading"><p class="eyebrow">Keep looking</p><h2>More from {category.shortName.toLowerCase()}.</h2></div><div class="idea-grid">{related.map((entry) => <IdeaCard idea={entry} />)}</div><a class="button related-cta" href="/#picker"><RefreshCw size={17} /> Get three date night ideas for tonight</a></div></section>
+  </article>
+</BaseLayout>
+
+<style>
+  .idea-hero { padding: 46px 0 75px; background: color-mix(in srgb, var(--accent) 55%, var(--paper)); border-bottom: 1px solid var(--ink); }
+  .back-link { display: inline-flex; align-items: center; gap: 5px; margin-bottom: 32px; font-size: .72rem; font-weight: 750; }
+  .idea-hero__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 62px; align-items: center; }
+  .idea-hero h1 { margin-bottom: 22px; font-size: clamp(3.5rem, 7vw, 6.8rem); font-weight: 540; }
+  .idea-hero__hook { max-width: 650px; font-size: 1.05rem; }
+  .idea-hero img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border: 1px solid var(--ink); box-shadow: 9px 9px 0 var(--ink); }
+  .idea-facts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .idea-facts span { padding: 8px 10px; border: 1px solid var(--ink); background: rgba(255,255,255,.5); display: inline-flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 750; }
+  .plan-grid, .source-grid { display: grid; grid-template-columns: 1fr .7fr; gap: 85px; }
+  .plan-main h2, .source-grid h2 { font-size: clamp(2.5rem, 5vw, 4.7rem); font-weight: 560; }
+  .plan-main ol { padding: 0; margin: 40px 0 0; list-style: none; border-top: 1px solid var(--ink); }
+  .plan-main li { padding: 22px 0; border-bottom: 1px solid var(--ink); display: grid; grid-template-columns: 44px 1fr; gap: 14px; }
+  .plan-main li > span { width: 34px; height: 34px; border-radius: 50%; background: var(--red); color: white; display: grid; place-items: center; font-size: .75rem; font-weight: 800; }
+  .plan-main li p { margin: 4px 0 0; }
+  aside { display: grid; gap: 14px; }
+  aside > div { padding: 22px; border: 1px solid var(--ink); background: var(--paper-bright); }
+  aside h2 { margin-bottom: 8px; font-family: var(--display); font-size: 1.45rem; }
+  aside p { margin-bottom: 0; color: var(--muted); font-size: .88rem; }
+  .quality-band { border-block: 1px solid var(--ink); background: var(--yellow); }
+  .quality-band__grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .quality-band__grid div { min-height: 88px; padding: 18px; border-right: 1px solid var(--ink); display: flex; align-items: center; gap: 8px; font-size: .75rem; font-weight: 750; }
+  .quality-band__grid div:first-child { border-left: 1px solid var(--ink); }
+  .source-section { background: var(--mint); }
+  .source-grid ul { margin: 0; padding: 0; list-style: none; }
+  .source-grid li { padding: 15px 0; border-bottom: 1px solid var(--ink); display: grid; gap: 3px; }
+  .source-grid li a { font-weight: 800; }
+  .source-grid li span { font-size: .7rem; color: var(--muted); }
+  .source-grid li small { font-size: .68rem; color: var(--muted); }
+  .edit-note { margin-top: 24px; padding: 16px; border: 1px solid var(--ink); background: rgba(255,255,255,.45); display: grid; gap: 5px; }
+  .edit-note strong { font-size: .68rem; text-transform: uppercase; }
+  .related-section { background: var(--paper-bright); }
+  .idea-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .related-cta { margin-top: 28px; }
+  @media (max-width: 800px) { .idea-hero__grid, .plan-grid, .source-grid { grid-template-columns: 1fr; gap: 35px; } .idea-grid { grid-template-columns: 1fr; } .quality-band__grid { grid-template-columns: 1fr; } .quality-band__grid div { border-left: 1px solid var(--ink); border-bottom: 1px solid var(--ink); } }
+</style>

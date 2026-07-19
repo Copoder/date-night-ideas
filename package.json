@@ -1,0 +1,42 @@
+{
+  "name": "date-night-ideas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "test": "tsx --test tests/*.test.ts",
+    "audit": "node tests/seo-audit.mjs",
+    "content:audit": "tsx scripts/audit-content.ts",
+    "content:research": "tsx scripts/fetch-content-research.ts",
+    "images:plan": "tsx scripts/generate-idea-image-plan.ts",
+    "images:install": "tsx scripts/install-reviewed-idea-images.ts",
+    "images:fetch": "node scripts/fetch-openverse-images.mjs",
+    "images:sync": "tsx scripts/sync-image-manifest.ts",
+    "images:contact-sheet": "node scripts/build-image-contact-sheet.mjs",
+    "images:generate": "IMAGE_PROVIDER=pollinations node scripts/generate-idea-images.mjs",
+    "images:generate:site": "IMAGE_PROVIDER=pollinations node scripts/generate-site-images.mjs",
+    "images:import": "node scripts/import-cursor-images.mjs",
+    "verify": "npm run check && npm test && npm run content:audit && npm run build && npm run audit"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "astro": "^7.1.1",
+    "lucide-astro": "^0.556.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "cheerio": "^1.2.0",
+    "sharp": "^0.35.3",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Picker from '@/components/Picker.astro';
+import AdSlot from '@/components/AdSlot.astro';
+import type { PickerAnswers } from '@/data/types';
+
+const params = Astro.url.searchParams;
+const limits = params.getAll('limits') as PickerAnswers['limits'];
+const prefill: Partial<PickerAnswers> = params.has('surprise') ? { limits: [] } : {
+  relationship: params.get('relationship') as PickerAnswers['relationship'],
+  location: params.get('location') as PickerAnswers['location'],
+  budget: params.get('budget') as PickerAnswers['budget'],
+  vibe: params.get('vibe') as PickerAnswers['vibe'],
+  duration: params.get('duration') as PickerAnswers['duration'],
+  limits
+};
+---
+
+<BaseLayout title="Your Date Night Ideas | Date Night Ideas" description="Three date night ideas matched to your budget, time, place, and mood." canonicalPath="/results" noindex>
+  <section class="results-page"><div class="shell"><Picker mode="results" prefill={prefill} /><AdSlot placement="results-after" /></div></section>
+</BaseLayout>
+
+<style>.results-page { min-height: 75vh; padding: 70px 0 100px; background: #f4e9d7; }</style>

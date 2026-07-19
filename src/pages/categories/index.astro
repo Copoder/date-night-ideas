@@ -1,0 +1,28 @@
+---
+import { ArrowRight } from 'lucide-astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { categories } from '@/data/categories';
+import { ideasByCategory } from '@/data/ideas';
+import { categoryPath } from '@/lib/routes';
+---
+
+<BaseLayout title="Browse Date Night Idea Categories | Date Night Ideas" description="Browse date night ideas by budget, place, relationship stage, season, and vibe, then narrow your favorites to three." canonicalPath="/categories">
+  <section class="archive-hero"><div class="shell"><p class="eyebrow">All 15 ways in</p><h1 class="display">Start with what matters tonight.</h1><p>Place, money, mood, season, relationship stage. Pick the constraint that is already making the decision for you.</p></div></section>
+  <section class="section"><div class="shell category-grid">{categories.map((category, index) => <a class="category-tile" href={categoryPath(category.id)} style={`--accent:${category.accent}`}><img src={category.image} alt="" width="640" height="430" loading="lazy" /><div><span>{String(index + 1).padStart(2, '0')} · {ideasByCategory(category.id).length} ideas</span><h2 class="display">{category.name}</h2><p>{category.description}</p><strong>Browse the category <ArrowRight size={17} /></strong></div></a>)}</div></section>
+</BaseLayout>
+
+<style>
+  .archive-hero { padding: 105px 0 80px; border-bottom: 1px solid var(--ink); background: var(--mint); }
+  .archive-hero h1 { max-width: 850px; margin-bottom: 18px; font-size: clamp(3.3rem, 8vw, 7rem); font-weight: 540; }
+  .archive-hero p:last-child { max-width: 660px; }
+  .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .category-tile { min-width: 0; border: 1px solid var(--ink); background: var(--paper-bright); text-decoration: none; }
+  .category-tile img { width: 100%; aspect-ratio: 3/2; object-fit: cover; background: var(--accent); }
+  .category-tile > div { padding: 24px; }
+  .category-tile span { color: var(--muted); font-size: .7rem; text-transform: uppercase; font-weight: 800; }
+  .category-tile h2 { margin: 10px 0; font-size: 2.25rem; font-weight: 580; }
+  .category-tile p { color: var(--muted); }
+  .category-tile strong { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; }
+  .category-tile:hover { box-shadow: 6px 6px 0 var(--accent); transform: translate(-2px,-2px); }
+  @media (max-width: 700px) { .category-grid { grid-template-columns: 1fr; } }
+</style>

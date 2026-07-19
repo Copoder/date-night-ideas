@@ -1,0 +1,307 @@
+---
+import { ArrowLeft, ArrowRight, Dice5, RefreshCw, Share2 } from 'lucide-astro';
+import type { PickerAnswers } from '@/data/types';
+import PickerQuestionHeading from './PickerQuestionHeading.astro';
+import PickerChoice from './PickerChoice.astro';
+
+interface Props { mode?: 'form' | 'results'; prefill?: Partial<PickerAnswers>; }
+const { mode = 'form', prefill = {} } = Astro.props;
+---
+
+<section class:list={['picker', { 'picker--results': mode === 'results' }]} id="picker" data-picker data-mode={mode} data-prefill={JSON.stringify(prefill)}>
+  <div class="picker__top">
+    <div>
+      <p class="eyebrow">Tonight, narrowed down</p>
+      <h2 class="display">Six quick calls. Three dates.</h2>
+    </div>
+    <button class="surprise" type="button" data-surprise><Dice5 size={19} /> Surprise me</button>
+  </div>
+
+  <div class="picker__progress" data-progress-wrap>
+    <div><span data-step-copy>Step 1 of 6</span><span>About 30 seconds</span></div>
+    <div class="picker__track" aria-hidden="true"><i data-progress></i></div>
+  </div>
+
+  <div class="picker__questions" data-questions>
+    <section class="picker-question" data-question="relationship">
+      <PickerQuestionHeading number="01" title="Who is this for?" copy="The relationship changes what feels easy, safe, and worth the effort." icon="heart" />
+      <div class="choice-grid choice-grid--four">
+        <PickerChoice value="first" label="First date" note="Public and low pressure" />
+        <PickerChoice value="dating" label="Dating / new-ish" note="Fun without overplanning" />
+        <PickerChoice value="longterm" label="Together a while" note="Break the familiar routine" />
+        <PickerChoice value="parents" label="Parents on a clock" note="Short windows count" />
+      </div>
+    </section>
+    <section class="picker-question" data-question="location" hidden>
+      <PickerQuestionHeading number="02" title="Stay in or go out?" copy="Pick the version you can realistically say yes to tonight." icon="map" />
+      <div class="choice-grid choice-grid--three">
+        <PickerChoice value="home" label="At home" note="No commute required" />
+        <PickerChoice value="out" label="Out & about" note="Leave the house" />
+        <PickerChoice value="either" label="Either works" note="Keep the options open" />
+      </div>
+    </section>
+    <section class="picker-question" data-question="budget" hidden>
+      <PickerQuestionHeading number="03" title="What's the budget?" copy="Choose the number you will still feel good about tomorrow." icon="wallet" />
+      <div class="choice-grid choice-grid--four">
+        <PickerChoice value="free" label="Free" note="$0 on purpose" />
+        <PickerChoice value="low" label="Under $30" note="Cheap and doable" />
+        <PickerChoice value="mid" label="$30–$80" note="A proper night out" />
+        <PickerChoice value="high" label="Splurge" note="Make it an occasion" />
+      </div>
+    </section>
+    <section class="picker-question" data-question="vibe" hidden>
+      <PickerQuestionHeading number="04" title="What should it feel like?" copy="Not every good date needs the same kind of energy." icon="spark" />
+      <div class="choice-grid choice-grid--four">
+        <PickerChoice value="chill" label="Chill / cozy" note="Low energy, still intentional" />
+        <PickerChoice value="playful" label="Playful" note="Laugh, compete, make a mess" />
+        <PickerChoice value="romantic" label="Romantic" note="Closer and a little slower" />
+        <PickerChoice value="adventurous" label="Adventurous" note="Try something new" />
+      </div>
+    </section>
+    <section class="picker-question" data-question="duration" hidden>
+      <PickerQuestionHeading number="05" title="How much time do you have?" copy="Use the real clock, including getting there and cleaning up." icon="clock" />
+      <div class="choice-grid choice-grid--three">
+        <PickerChoice value="short" label="Under 1 hour" note="A quick reset" />
+        <PickerChoice value="medium" label="1–3 hours" note="Classic date-night window" />
+        <PickerChoice value="long" label="Half day or more" note="Let the plan stretch out" />
+      </div>
+    </section>
+    <section class="picker-question" data-question="limits" hidden>
+      <PickerQuestionHeading number="06" title="Any hard limits?" copy="Choose all that apply, or skip. These rules will never be bent." icon="spark" />
+      <div class="choice-grid choice-grid--limits" data-multi>
+        <PickerChoice value="noAlcohol" label="No alcohol" note="Keep every result alcohol-free" />
+        <PickerChoice value="kidFriendly" label="Kid-friendly" note="Safe with children nearby" />
+        <PickerChoice value="indoorOnly" label="Indoor only" note="Weather cannot ruin it" />
+        <PickerChoice value="lowPrep" label="Low prep" note="Minimal setup and cleanup" />
+        <PickerChoice value="publicFriendly" label="Public / first-date safe" note="Stay in an easy public setting" />
+      </div>
+      <p class="limit-status" data-limit-status aria-live="polite">Unavailable combinations are disabled so every finished Picker can return three honest matches.</p>
+      <button class="button button--light picker__finish" type="button" data-finish>Show our three <ArrowRight size={18} /></button>
+    </section>
+  </div>
+
+  <div class="picker__nav" data-picker-nav>
+    <button class="icon-button" type="button" data-back aria-label="Previous question" title="Previous question"><ArrowLeft size={20} /></button>
+    <span data-answer-note>Tap one answer to continue</span>
+  </div>
+
+  <div class="picker__results" data-results hidden>
+    <div class="results-heading">
+      <div><p class="eyebrow">Your shortlist</p><h2 class="display">Three dates worth doing.</h2></div>
+      <div class="results-actions">
+        <button class="button button--light" type="button" data-refresh><RefreshCw size={17} /> New set</button>
+        <button class="icon-button" type="button" data-share aria-label="Share results" title="Share results"><Share2 size={19} /></button>
+      </div>
+    </div>
+    <p class="share-status" data-share-status aria-live="polite"></p>
+    <div class="results-grid" data-results-grid></div>
+    <div class="empty-results" data-empty-results hidden>
+      <h3>Those limits leave no honest match.</h3>
+      <p>We will not quietly bend a hard limit. Change an answer, or retry without the optional limits.</p>
+      <div><a class="button button--light" href="/#picker">Change answers</a><button class="button" type="button" data-relax-limits>Try without hard limits</button></div>
+    </div>
+    <button class="picker__start-over" type="button" data-start-over>Start over</button>
+  </div>
+</section>
+
+<script>
+  import { ideas } from '@/data/ideas';
+  import { isLimitAvailable, sanitizeAnswers, selectIdeas, whyItFits } from '@/lib/recommend';
+  import { trackEvent } from '@/lib/analytics';
+  import type { PickerAnswers } from '@/data/types';
+
+  const escapeHtml = (value: string) => value.replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character] ?? character);
+  const labels = {
+    free: 'Free', low: 'Under $30', mid: '$30–$80', high: 'Splurge',
+    short: 'Under 1 hour', medium: '1–3 hours', long: 'Half day+',
+    home: 'At home', out: 'Go out', either: 'Either'
+  } as const;
+
+  document.querySelectorAll<HTMLElement>('[data-picker]').forEach((root) => {
+    const questions = [...root.querySelectorAll<HTMLElement>('[data-question]')];
+    const questionKeys = ['relationship', 'location', 'budget', 'vibe', 'duration', 'limits'] as const;
+    const mode = root.dataset.mode ?? 'form';
+    const serverPrefill = JSON.parse(root.dataset.prefill || '{}') as Partial<PickerAnswers>;
+    const readUrlAnswers = (): Partial<PickerAnswers> => {
+      if (mode !== 'results') return {};
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('surprise')) return { limits: [] };
+      return {
+        relationship: (params.get('relationship') || undefined) as PickerAnswers['relationship'],
+        location: (params.get('location') || undefined) as PickerAnswers['location'],
+        budget: (params.get('budget') || undefined) as PickerAnswers['budget'],
+        vibe: (params.get('vibe') || undefined) as PickerAnswers['vibe'],
+        duration: (params.get('duration') || undefined) as PickerAnswers['duration'],
+        limits: params.getAll('limits') as PickerAnswers['limits']
+      };
+    };
+    const prefill = sanitizeAnswers({ ...serverPrefill, ...readUrlAnswers() });
+    let answers: PickerAnswers = prefill;
+    let step = 0;
+    let offset = 0;
+    let started = false;
+    const progress = root.querySelector<HTMLElement>('[data-progress]');
+    const stepCopy = root.querySelector<HTMLElement>('[data-step-copy]');
+    const questionsWrap = root.querySelector<HTMLElement>('[data-questions]');
+    const nav = root.querySelector<HTMLElement>('[data-picker-nav]');
+    const results = root.querySelector<HTMLElement>('[data-results]');
+    const grid = root.querySelector<HTMLElement>('[data-results-grid]');
+    const emptyResults = root.querySelector<HTMLElement>('[data-empty-results]');
+    const resultHeading = root.querySelector<HTMLElement>('.results-heading h2');
+    const limitStatus = root.querySelector<HTMLElement>('[data-limit-status]');
+
+    const syncUrl = () => {
+      const params = new URLSearchParams();
+      Object.entries(answers).forEach(([key, value]) => {
+        if (Array.isArray(value)) value.forEach((entry) => params.append(key, entry));
+        else if (value) params.set(key, String(value));
+      });
+      return `/results/?${params.toString()}`;
+    };
+
+    const refreshLimitAvailability = () => {
+      const limitQuestion = root.querySelector<HTMLElement>('[data-question="limits"]');
+      limitQuestion?.querySelectorAll<HTMLButtonElement>('[data-value]').forEach((button) => {
+        const limit = button.dataset.value as PickerAnswers['limits'][number];
+        const selected = answers.limits.includes(limit);
+        const available = selected || isLimitAvailable(ideas, answers, limit);
+        button.disabled = !available;
+        button.title = available ? '' : 'This limit conflicts with your current answers.';
+      });
+    };
+
+    const showStep = (next: number, moveFocus = true) => {
+      step = Math.max(0, Math.min(questions.length - 1, next));
+      questions.forEach((question, index) => question.hidden = index !== step);
+      if (stepCopy) stepCopy.textContent = `Step ${step + 1} of ${questions.length}`;
+      if (progress) progress.style.width = `${((step + 1) / questions.length) * 100}%`;
+      root.querySelector<HTMLElement>('[data-back]')?.toggleAttribute('disabled', step === 0);
+      if (step === questions.length - 1) refreshLimitAvailability();
+      if (moveFocus) questions[step]?.querySelector<HTMLElement>('button:not(:disabled)')?.focus({ preventScroll: true });
+    };
+
+    const renderResults = () => {
+      const picks = selectIdeas(ideas, answers, offset, 3);
+      if (!grid || !results) return;
+      grid.innerHTML = picks.map((idea) => `
+        <article class="result-card">
+          <a class="result-card__image" href="/ideas/${escapeHtml(idea.slug)}/"><img src="${escapeHtml(idea.image)}" alt="${escapeHtml(idea.imageAlt)}" width="720" height="480"></a>
+          <div class="result-card__body">
+            <div class="result-card__meta"><span>${escapeHtml(labels[idea.budget])}</span><span>${escapeHtml(labels[idea.duration])}</span><span>${escapeHtml(labels[idea.locations[0] as keyof typeof labels] ?? idea.locations[0])}</span></div>
+            <h3><a href="/ideas/${escapeHtml(idea.slug)}/">${escapeHtml(idea.title)}</a></h3>
+            <p>${escapeHtml(idea.hook)}</p>
+            <div class="result-card__why"><strong>Why it fits</strong><span>${escapeHtml(whyItFits(idea, answers))}</span></div>
+            <a class="result-card__link" href="/ideas/${escapeHtml(idea.slug)}/">See the full plan →</a>
+          </div>
+        </article>`).join('');
+      questionsWrap?.setAttribute('hidden', '');
+      nav?.setAttribute('hidden', '');
+      root.querySelector<HTMLElement>('[data-progress-wrap]')?.setAttribute('hidden', '');
+      results.hidden = false;
+      if (emptyResults) emptyResults.hidden = picks.length !== 0;
+      grid.hidden = picks.length === 0;
+      if (resultHeading) resultHeading.textContent = picks.length === 3 ? 'Three dates worth doing.' : picks.length === 2 ? 'Two honest matches.' : picks.length === 1 ? 'One honest match.' : 'No honest match yet.';
+      root.querySelector<HTMLButtonElement>('[data-refresh]')?.toggleAttribute('disabled', picks.length < 3);
+      window.history.replaceState({}, '', syncUrl());
+      trackEvent('picker_complete', { result_count: picks.length, refresh_offset: offset });
+    };
+
+    questions.forEach((question, questionIndex) => {
+      question.querySelectorAll<HTMLButtonElement>('[data-value]').forEach((button) => button.addEventListener('click', () => {
+        const key = questionKeys[questionIndex];
+        const value = button.dataset.value ?? '';
+        if (key === 'limits') {
+          if (button.disabled) return;
+          button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+          answers.limits = [...question.querySelectorAll<HTMLButtonElement>('[data-value][aria-pressed="true"]')].map((entry) => entry.dataset.value as PickerAnswers['limits'][number]);
+          if (limitStatus) limitStatus.textContent = answers.limits.length ? `${answers.limits.length} hard ${answers.limits.length === 1 ? 'limit' : 'limits'} selected.` : 'No optional hard limits selected.';
+          refreshLimitAvailability();
+          return;
+        }
+        if (!started) { started = true; trackEvent('picker_start'); }
+        question.querySelectorAll('[data-value]').forEach((entry) => entry.setAttribute('aria-pressed', 'false'));
+        button.setAttribute('aria-pressed', 'true');
+        if (key === 'relationship') answers.relationship = value as PickerAnswers['relationship'];
+        if (key === 'location') answers.location = value as PickerAnswers['location'];
+        if (key === 'budget') answers.budget = value as PickerAnswers['budget'];
+        if (key === 'vibe') answers.vibe = value as PickerAnswers['vibe'];
+        if (key === 'duration') answers.duration = value as PickerAnswers['duration'];
+        trackEvent('picker_answer', { step: questionIndex + 1, question: key, answer: value });
+        window.setTimeout(() => showStep(step + 1), 120);
+      }));
+    });
+
+    root.querySelector('[data-back]')?.addEventListener('click', () => showStep(step - 1));
+    root.querySelector('[data-finish]')?.addEventListener('click', () => mode === 'form' ? window.location.assign(syncUrl()) : renderResults());
+    root.querySelector('[data-refresh]')?.addEventListener('click', () => { offset += 1; trackEvent('picker_refresh', { refresh_offset: offset }); renderResults(); });
+    root.querySelector('[data-start-over]')?.addEventListener('click', () => window.location.assign('/#picker'));
+    root.querySelector('[data-relax-limits]')?.addEventListener('click', () => { answers.limits = []; offset = 0; renderResults(); });
+    root.querySelector('[data-surprise]')?.addEventListener('click', () => { answers = { limits: [] }; offset = Math.floor(Math.random() * 50); trackEvent('picker_surprise'); mode === 'form' ? window.location.assign(`/results/?surprise=${offset}`) : renderResults(); });
+    root.querySelector('[data-share]')?.addEventListener('click', async () => {
+      const shareData = { title: 'Our Date Night Ideas', text: 'Three date ideas that fit our night.', url: window.location.href };
+      const status = root.querySelector<HTMLElement>('[data-share-status]');
+      try {
+        if (navigator.share) await navigator.share(shareData);
+        else { await navigator.clipboard.writeText(window.location.href); if (status) status.textContent = 'Link copied.'; }
+        trackEvent('results_share');
+      } catch { if (status) status.textContent = 'Sharing was canceled.'; }
+    });
+
+    if (mode === 'results') renderResults(); else showStep(0, false);
+  });
+</script>
+
+<style>
+  .picker { padding: 34px; border: 1px solid var(--ink); background: var(--paper-bright); box-shadow: 8px 8px 0 var(--pink); }
+  .picker--results > .picker__top,
+  .picker--results > .picker__nav { display: none; }
+  .picker__top, .results-heading { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; }
+  .picker__top h2, .results-heading h2 { margin: 0; font-size: clamp(2.1rem, 5vw, 3.7rem); }
+  .surprise { min-height: 42px; padding: 0 14px; border: 1px solid var(--ink); border-radius: 3px; background: var(--yellow); display: inline-flex; align-items: center; gap: 7px; font-weight: 800; cursor: pointer; }
+  .picker__progress { margin: 30px 0 36px; }
+  .picker__progress > div:first-child { display: flex; justify-content: space-between; color: var(--muted); font-size: .72rem; font-weight: 750; }
+  .picker__track { height: 5px; margin-top: 8px; background: #e2dbcf; overflow: hidden; }
+  .picker__track i { display: block; width: 16.66%; height: 100%; background: var(--red); transition: width .25s; }
+  :global(.question-heading) { display: grid; grid-template-columns: 42px 28px 1fr; align-items: start; gap: 12px; margin-bottom: 24px; }
+  :global(.question-heading > span) { font-family: var(--display); font-size: 1.55rem; color: var(--red); }
+  :global(.question-heading h3) { margin-bottom: 6px; font-family: var(--display); font-size: clamp(1.75rem, 4vw, 2.55rem); font-weight: 620; }
+  :global(.question-heading p) { margin: 0; color: var(--muted); font-size: .88rem; }
+  .choice-grid { display: grid; gap: 12px; }
+  .choice-grid--four { grid-template-columns: repeat(4, 1fr); }
+  .choice-grid--three { grid-template-columns: repeat(3, 1fr); }
+  .choice-grid--limits { grid-template-columns: repeat(3, 1fr); }
+  :global(.choice) { min-height: 112px; padding: 16px; border: 1px solid var(--ink); border-radius: 3px; background: var(--paper); text-align: left; position: relative; cursor: pointer; transition: transform .14s, background .14s; }
+  :global(.choice:hover) { transform: translateY(-2px); background: #fff3d4; }
+  :global(.choice[aria-pressed='true']) { background: var(--mint); box-shadow: 3px 3px 0 var(--ink); }
+  :global(.choice strong), :global(.choice small) { display: block; }
+  :global(.choice strong) { margin-bottom: 5px; font-size: .9rem; }
+  :global(.choice small) { max-width: 150px; color: var(--muted); font-size: .7rem; }
+  :global(.choice i) { position: absolute; right: 10px; top: 8px; font-style: normal; opacity: 0; }
+  :global(.choice[aria-pressed='true'] i) { opacity: 1; }
+  .picker__finish { margin-top: 18px; }
+  .limit-status { min-height: 22px; margin: 14px 0 0; color: var(--muted); font-size: .72rem; }
+  .picker__nav { margin-top: 22px; display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: .72rem; }
+  .picker__nav button:disabled { opacity: .35; cursor: default; }
+  .picker__results { padding-top: 8px; }
+  .results-actions { display: flex; align-items: center; gap: 9px; }
+  .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+  .picker__start-over { display: block; margin: 24px auto 0; border: 0; background: none; text-decoration: underline; cursor: pointer; }
+  .empty-results { margin-top: 26px; padding: 28px; border: 1px solid var(--ink); background: var(--yellow); }
+  .empty-results h3 { margin-bottom: 7px; font-family: var(--display); font-size: 2rem; }
+  .empty-results p { max-width: 620px; color: var(--muted); }
+  .empty-results > div { display: flex; flex-wrap: wrap; gap: 10px; }
+  .share-status { min-height: 20px; margin: 8px 0 0; color: var(--muted); font-size: .75rem; }
+  :global(.result-card) { border: 1px solid var(--ink); background: var(--paper-bright); min-width: 0; }
+  :global(.result-card__image) { display: block; aspect-ratio: 3/2; overflow: hidden; background: var(--yellow); }
+  :global(.result-card__image img) { width: 100%; height: 100%; object-fit: cover; }
+  :global(.result-card__body) { padding: 17px; }
+  :global(.result-card__meta) { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: .63rem; font-weight: 750; }
+  :global(.result-card h3) { margin: 12px 0 7px; font-family: var(--display); font-size: 1.55rem; }
+  :global(.result-card h3 a), :global(.result-card__link) { text-decoration: none; }
+  :global(.result-card p) { color: var(--muted); font-size: .78rem; }
+  :global(.result-card__why) { margin: 13px 0; padding: 10px; background: #f6edde; display: grid; gap: 3px; font-size: .7rem; }
+  :global(.result-card__why strong) { font-size: .6rem; text-transform: uppercase; }
+  :global(.result-card__link) { font-size: .72rem; font-weight: 850; }
+  @media (max-width: 850px) { .choice-grid--four, .choice-grid--limits { grid-template-columns: repeat(2, 1fr); } .results-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .picker { padding: 22px 16px; box-shadow: 5px 5px 0 var(--pink); } .picker__top, .results-heading { flex-direction: column; } .choice-grid--four, .choice-grid--three, .choice-grid--limits { grid-template-columns: 1fr; } :global(.choice) { min-height: 88px; } :global(.question-heading) { grid-template-columns: 35px 24px 1fr; } }
+</style>
