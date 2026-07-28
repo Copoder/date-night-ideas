@@ -28,9 +28,11 @@ with sync_playwright() as playwright:
 
     page.goto(BASE, wait_until="networkidle")
     print("QA: desktop homepage loaded", flush=True)
-    expect(page.locator("h1")).to_contain_text("Date night ideas")
+    expect(page.locator("main h1")).to_contain_text("Date night ideas")
     assert page.evaluate("document.activeElement.tagName") == "BODY", "homepage stole initial keyboard focus"
-    expect(page.locator(".picker__top h2")).to_contain_text("Six quick calls")
+    expect(page.locator('.hero [data-question="relationship"]')).to_be_visible()
+    expect(page.locator('.hero [data-question="relationship"] [data-value="first"]')).to_be_in_viewport()
+    page.evaluate("window.__pickerEvents = []; window.addEventListener('date-night:analytics', event => window.__pickerEvents.push(event.detail))")
     assert page.locator('.idea-directory a[href^="/ideas/"]').count() == 300, "homepage directory does not expose all 300 ideas"
     hero_width = page.locator(".hero__image").evaluate("image => image.naturalWidth")
     assert hero_width > 0, "hero image is blank"
@@ -38,6 +40,8 @@ with sync_playwright() as playwright:
     page.screenshot(path=str(ARTIFACTS / "home-desktop.png"), full_page=True)
 
     page.locator('[data-question="relationship"] [data-value="first"]').click()
+    picker_start = page.evaluate("window.__pickerEvents.find(event => event.name === 'picker_start')")
+    assert picker_start["parameters"]["placement"] == "hero", f"homepage picker source was not tracked: {picker_start}"
     page.locator('[data-question="location"] [data-value="home"]').click()
     page.locator('[data-question="budget"] [data-value="free"]').click()
     page.locator('[data-question="vibe"] [data-value="playful"]').click()
@@ -46,6 +50,7 @@ with sync_playwright() as playwright:
     page.locator('[data-question="limits"] [data-value="noAlcohol"]').click()
     page.locator("[data-finish]").click()
     page.wait_for_url("**/results/?**")
+    assert "source=hero" in page.url, f"homepage picker source was not preserved: {page.url}"
     page.wait_for_load_state("networkidle")
     print("QA: picker completed", flush=True)
     expect(page.locator(".result-card")).to_have_count(3)
@@ -96,6 +101,8 @@ with sync_playwright() as playwright:
     mobile.goto(BASE, wait_until="networkidle")
     print("QA: mobile homepage loaded", flush=True)
     assert_no_overflow(mobile, "mobile homepage")
+    expect(mobile.locator('.hero [data-question="relationship"]')).to_be_visible()
+    expect(mobile.locator('.hero [data-question="relationship"] [data-value="first"]')).to_be_in_viewport()
     mobile.get_by_role("button", name="Open menu").click()
     expect(mobile.locator("[data-site-nav]")).to_have_attribute("data-open", "true")
     mobile.screenshot(path=str(ARTIFACTS / "home-mobile.png"), full_page=True)

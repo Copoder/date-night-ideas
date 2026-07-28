@@ -4,12 +4,12 @@ import type { PickerAnswers } from '@/data/types';
 import PickerQuestionHeading from './PickerQuestionHeading.astro';
 import PickerChoice from './PickerChoice.astro';
 
-interface Props { mode?: 'form' | 'results'; prefill?: Partial<PickerAnswers>; }
-const { mode = 'form', prefill = {} } = Astro.props;
+interface Props { mode?: 'form' | 'results'; prefill?: Partial<PickerAnswers>; variant?: 'default' | 'hero'; }
+const { mode = 'form', prefill = {}, variant = 'default' } = Astro.props;
 ---
 
-<section class:list={['picker', { 'picker--results': mode === 'results' }]} id="picker" data-picker data-mode={mode} data-prefill={JSON.stringify(prefill)}>
-  <div class="picker__top">
+<section class:list={['picker', `picker--${variant}`, { 'picker--results': mode === 'results' }]} id="picker" data-picker data-mode={mode} data-placement={variant} data-prefill={JSON.stringify(prefill)}>
+  <div class="picker__top" hidden={variant === 'hero'}>
     <div>
       <p class="eyebrow">Tonight, narrowed down</p>
       <h2 class="display">Six quick calls. Three dates.</h2>
@@ -121,6 +121,9 @@ const { mode = 'form', prefill = {} } = Astro.props;
     const questions = [...root.querySelectorAll<HTMLElement>('[data-question]')];
     const questionKeys = ['relationship', 'location', 'budget', 'vibe', 'duration', 'limits'] as const;
     const mode = root.dataset.mode ?? 'form';
+    const placement = root.dataset.placement ?? 'default';
+    const requestedSource = mode === 'results' ? new URLSearchParams(window.location.search).get('source') : null;
+    const source = requestedSource === 'hero' ? 'hero' : placement;
     const serverPrefill = JSON.parse(root.dataset.prefill || '{}') as Partial<PickerAnswers>;
     const readUrlAnswers = (): Partial<PickerAnswers> => {
       if (mode !== 'results') return {};
@@ -156,6 +159,7 @@ const { mode = 'form', prefill = {} } = Astro.props;
         if (Array.isArray(value)) value.forEach((entry) => params.append(key, entry));
         else if (value) params.set(key, String(value));
       });
+      if (source !== 'default') params.set('source', source);
       return `/results/?${params.toString()}`;
     };
 
@@ -203,7 +207,7 @@ const { mode = 'form', prefill = {} } = Astro.props;
       if (resultHeading) resultHeading.textContent = picks.length === 3 ? 'Three dates worth doing.' : picks.length === 2 ? 'Two honest matches.' : picks.length === 1 ? 'One honest match.' : 'No honest match yet.';
       root.querySelector<HTMLButtonElement>('[data-refresh]')?.toggleAttribute('disabled', picks.length < 3);
       window.history.replaceState({}, '', syncUrl());
-      trackEvent('picker_complete', { result_count: picks.length, refresh_offset: offset });
+      trackEvent('picker_complete', { result_count: picks.length, refresh_offset: offset, placement: source });
     };
 
     questions.forEach((question, questionIndex) => {
@@ -218,7 +222,7 @@ const { mode = 'form', prefill = {} } = Astro.props;
           refreshLimitAvailability();
           return;
         }
-        if (!started) { started = true; trackEvent('picker_start'); }
+        if (!started) { started = true; trackEvent('picker_start', { placement }); }
         question.querySelectorAll('[data-value]').forEach((entry) => entry.setAttribute('aria-pressed', 'false'));
         button.setAttribute('aria-pressed', 'true');
         if (key === 'relationship') answers.relationship = value as PickerAnswers['relationship'];
@@ -236,7 +240,7 @@ const { mode = 'form', prefill = {} } = Astro.props;
     root.querySelector('[data-refresh]')?.addEventListener('click', () => { offset += 1; trackEvent('picker_refresh', { refresh_offset: offset }); renderResults(); });
     root.querySelector('[data-start-over]')?.addEventListener('click', () => window.location.assign('/#picker'));
     root.querySelector('[data-relax-limits]')?.addEventListener('click', () => { answers.limits = []; offset = 0; renderResults(); });
-    root.querySelector('[data-surprise]')?.addEventListener('click', () => { answers = { limits: [] }; offset = Math.floor(Math.random() * 50); trackEvent('picker_surprise'); mode === 'form' ? window.location.assign(`/results/?surprise=${offset}`) : renderResults(); });
+    root.querySelector('[data-surprise]')?.addEventListener('click', () => { answers = { limits: [] }; offset = Math.floor(Math.random() * 50); trackEvent('picker_surprise', { placement }); mode === 'form' ? window.location.assign(`/results/?surprise=${offset}&source=${placement}`) : renderResults(); });
     root.querySelector('[data-share]')?.addEventListener('click', async () => {
       const shareData = { title: 'Our Date Night Ideas', text: 'Three date ideas that fit our night.', url: window.location.href };
       const status = root.querySelector<HTMLElement>('[data-share-status]');
@@ -253,6 +257,14 @@ const { mode = 'form', prefill = {} } = Astro.props;
 
 <style>
   .picker { padding: 34px; border: 1px solid var(--ink); background: var(--paper-bright); box-shadow: 8px 8px 0 var(--pink); }
+  .picker--hero { padding: 24px 26px 20px; background: rgba(255, 253, 248, .97); box-shadow: 8px 8px 0 var(--yellow); color: var(--ink); }
+  .picker--hero > .picker__top { display: none; }
+  .picker--hero .picker__progress { margin: 0 0 18px; }
+  .picker--hero :global(.question-heading) { margin-bottom: 16px; }
+  .picker--hero :global(.question-heading h3) { font-size: clamp(1.55rem, 2.5vw, 2rem); }
+  .picker--hero :global(.question-heading p) { font-size: .78rem; }
+  .picker--hero :global(.choice) { min-height: 78px; padding: 12px 14px; background: var(--paper-bright); }
+  .picker--hero .picker__nav { margin-top: 14px; }
   .picker--results > .picker__top,
   .picker--results > .picker__nav { display: none; }
   .picker__top, .results-heading { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; }
@@ -303,5 +315,21 @@ const { mode = 'form', prefill = {} } = Astro.props;
   :global(.result-card__why strong) { font-size: .6rem; text-transform: uppercase; }
   :global(.result-card__link) { font-size: .72rem; font-weight: 850; }
   @media (max-width: 850px) { .choice-grid--four, .choice-grid--limits { grid-template-columns: repeat(2, 1fr); } .results-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 560px) { .picker { padding: 22px 16px; box-shadow: 5px 5px 0 var(--pink); } .picker__top, .results-heading { flex-direction: column; } .choice-grid--four, .choice-grid--three, .choice-grid--limits { grid-template-columns: 1fr; } :global(.choice) { min-height: 88px; } :global(.question-heading) { grid-template-columns: 35px 24px 1fr; } }
+  @media (max-width: 560px) {
+    .picker { padding: 22px 16px; box-shadow: 5px 5px 0 var(--pink); }
+    .picker--hero { padding: 18px 14px 14px; box-shadow: 5px 5px 0 var(--yellow); }
+    .picker__top, .results-heading { flex-direction: column; }
+    .choice-grid--four, .choice-grid--three, .choice-grid--limits { grid-template-columns: 1fr; }
+    .picker--hero .choice-grid--four, .picker--hero .choice-grid--three, .picker--hero .choice-grid--limits { grid-template-columns: repeat(2, 1fr); }
+    :global(.choice) { min-height: 88px; }
+    .picker--hero :global(.choice) { min-height: 66px; padding: 9px 10px; }
+    .picker--hero :global(.choice small) { display: none; }
+    :global(.question-heading) { grid-template-columns: 35px 24px 1fr; }
+    .picker--hero :global(.question-heading) { grid-template-columns: 24px 22px 1fr; gap: 7px; margin-bottom: 12px; }
+    .picker--hero :global(.question-heading > span) { font-size: 1.15rem; }
+    .picker--hero :global(.question-heading h3) { font-size: 1.45rem; }
+    .picker--hero :global(.question-heading p) { display: none; }
+    .picker--hero .picker__progress { margin-bottom: 12px; }
+    .picker--hero .picker__nav { margin-top: 10px; }
+  }
 </style>
