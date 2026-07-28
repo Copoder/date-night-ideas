@@ -8,3 +8,7 @@ playwright-report/
 .wrangler/
 .env
 .gstack/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
