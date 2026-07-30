@@ -8,6 +8,9 @@
     "check": "astro check",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "cf:dev": "npm run build && wrangler dev",
+    "deploy:dry": "npm run build && wrangler deploy --dry-run",
+    "deploy": "npm run build && wrangler deploy",
     "test": "tsx --test tests/*.test.ts",
     "audit": "node tests/seo-audit.mjs",
     "content:audit": "tsx scripts/audit-content.ts",
@@ -34,7 +37,8 @@
     "cheerio": "^1.2.0",
     "sharp": "^0.35.3",
     "tsx": "^4.23.1",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.115.0"
   },
   "engines": {
     "node": ">=22.0.0"
